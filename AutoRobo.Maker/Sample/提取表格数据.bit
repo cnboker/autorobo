@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoScript StartUrl="http://www.ebotop.com/demo/iplist" Target="System" DataMethod="Collect">
+  <MainAction>
+    <Action ActionType="ActionNavigate" BindName="">http://www.ebotop.com/demo/iplist</Action>
+    <Action ActionType="ActionExtract" ObjectName="ipTable" PropertyName="Text" StringPattern.Expression="" StringPattern.Pattern="1" FliterEmptyString="0" IsContextBinding="0" ExtractType="1">
+      <ElementType>TableCell</ElementType>
+      <FinderSet>
+        <Finder FindMethod="CssSelector" FindName="" FindValue="HTML&gt;BODY&gt;DIV:eq(1)&gt;DIV&gt;DIV&gt;TABLE&gt;TBODY&gt;TR&gt;TD:nth-child(1)" Regex="0" />
+      </FinderSet>
+    </Action>
+    <Action ActionType="ActionExtract" ObjectName="ipTable" PropertyName="Text" StringPattern.Expression="" StringPattern.Pattern="1" FliterEmptyString="0" IsContextBinding="0" ExtractType="1">
+      <ElementType>TableCell</ElementType>
+      <FinderSet>
+        <Finder FindMethod="CssSelector" FindName="" FindValue="HTML&gt;BODY&gt;DIV:eq(1)&gt;DIV&gt;DIV&gt;TABLE&gt;TBODY&gt;TR&gt;TD:nth-child(2)" Regex="0" />
+      </FinderSet>
+    </Action>
+    <Action ActionType="ActionFileWriter" FileName="iptable.csv" HasHeaderRecord="1" VariableName="ipTable" FileType="0" />
+  </MainAction>
+  <FunctionAction />
+  <VariableAction>
+    <Action ActionType="ActionIntegerVariable" Name="count" Direction="0" />
+    <Action ActionType="ActionArrayVariable" Name="rowArray" Direction="0" />
+    <Action ActionType="ActionTableVariable" Name="ipTable" Direction="0" />
+  </VariableAction>
+</AutoScript>

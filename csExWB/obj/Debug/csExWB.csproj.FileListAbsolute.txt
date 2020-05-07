@@ -1,0 +1,16 @@
+D:\mywebsite\autorobo\src\csExWB\bin\Debug\csExWB.dll
+D:\mywebsite\autorobo\src\csExWB\bin\Debug\csExWB.pdb
+D:\mywebsite\autorobo\src\csExWB\bin\Debug\log4net.dll
+D:\mywebsite\autorobo\src\csExWB\bin\Debug\Microsoft.mshtml.dll
+D:\mywebsite\autorobo\src\csExWB\obj\Debug\csExWB.csprojResolveAssemblyReference.cache
+D:\mywebsite\autorobo\src\csExWB\obj\Debug\csExWB.dll
+D:\mywebsite\autorobo\src\csExWB\obj\Debug\csExWB.pdb
+H:\backup\D\mywebsite\autorobo\src\csExWB\bin\Debug\csExWB.dll
+H:\backup\D\mywebsite\autorobo\src\csExWB\bin\Debug\csExWB.pdb
+H:\backup\D\mywebsite\autorobo\src\csExWB\bin\Debug\log4net.dll
+H:\backup\D\mywebsite\autorobo\src\csExWB\bin\Debug\Microsoft.mshtml.dll
+H:\backup\D\mywebsite\autorobo\src\csExWB\obj\Debug\csExWB.csprojAssemblyReference.cache
+H:\backup\D\mywebsite\autorobo\src\csExWB\obj\Debug\csExWB.csproj.CoreCompileInputs.cache
+H:\backup\D\mywebsite\autorobo\src\csExWB\obj\Debug\csExWB.csproj.CopyComplete
+H:\backup\D\mywebsite\autorobo\src\csExWB\obj\Debug\csExWB.dll
+H:\backup\D\mywebsite\autorobo\src\csExWB\obj\Debug\csExWB.pdb

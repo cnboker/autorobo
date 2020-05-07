@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ErikEJ.SqlCeScripting</id>
+    <version>3.5.2.26</version>
+    <authors>ErikEJ</authors>
+    <owners>ErikEJ</owners>
+    <licenseUrl>http://exportsqlce.codeplex.com/license</licenseUrl>
+    <projectUrl>http://exportsqlce.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>For SQL Server Compact, for easy inclusion of database scripting in your own application</description>
+    <tags>sqlce sql compact script scripting</tags>
+    <dependencies>
+      <dependency id="Microsoft.SqlServer.Compact" version="4.0.8876.1" />
+      <dependency id="QuickGraph" />
+    </dependencies>
+  </metadata>
+</package>

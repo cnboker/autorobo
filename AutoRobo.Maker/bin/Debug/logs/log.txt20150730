@@ -1,0 +1,157 @@
+FATAL 2015-07-30 22:54:32,085 160430ms ActionsModelView       StepIn             - System.Data.SqlClient.SqlException (0x80131904): 列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+   在 AutoRobo.Core.Actions.ActionDatabaseWriter.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\InOut\ActionDatabaseWriter.cs:行号 73
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145
+ClientConnectionId:a60479de-c08b-4534-a376-6045adaeeec9
+Error Number:207,State:1,Class:16
+FATAL 2015-07-30 22:54:46,571 174916ms ActionsModelView       StepIn             - System.Data.SqlClient.SqlException (0x80131904): 列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+   在 AutoRobo.Core.Actions.ActionDatabaseWriter.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\InOut\ActionDatabaseWriter.cs:行号 73
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145
+ClientConnectionId:a60479de-c08b-4534-a376-6045adaeeec9
+Error Number:207,State:1,Class:16
+FATAL 2015-07-30 22:54:50,492 178837ms ActionsModelView       StepIn             - System.Data.SqlClient.SqlException (0x80131904): 列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+   在 AutoRobo.Core.Actions.ActionDatabaseWriter.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\InOut\ActionDatabaseWriter.cs:行号 73
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145
+ClientConnectionId:a60479de-c08b-4534-a376-6045adaeeec9
+Error Number:207,State:1,Class:16
+FATAL 2015-07-30 22:54:51,471 179816ms ActionsModelView       StepIn             - System.Data.SqlClient.SqlException (0x80131904): 列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+列名 'D' 无效。
+   在 AutoRobo.Core.Actions.ActionDatabaseWriter.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\InOut\ActionDatabaseWriter.cs:行号 73
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145
+ClientConnectionId:a60479de-c08b-4534-a376-6045adaeeec9
+Error Number:207,State:1,Class:16
+FATAL 2015-07-30 23:02:10,405 618750ms ActionsModelView       StepIn             - System.InvalidOperationException: ExecuteNonQuery: CommandText 属性尚未初始化
+   在 AutoRobo.Core.Actions.ActionDatabaseWriter.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\InOut\ActionDatabaseWriter.cs:行号 73
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145
+FATAL 2015-07-30 23:02:10,605 618950ms ActionsModelView       StepIn             - System.InvalidOperationException: ExecuteNonQuery: CommandText 属性尚未初始化
+   在 AutoRobo.Core.Actions.ActionDatabaseWriter.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\InOut\ActionDatabaseWriter.cs:行号 73
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145
+FATAL 2015-07-30 23:02:11,066 619411ms ActionsModelView       StepIn             - System.InvalidOperationException: ExecuteNonQuery: CommandText 属性尚未初始化
+   在 AutoRobo.Core.Actions.ActionDatabaseWriter.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\InOut\ActionDatabaseWriter.cs:行号 73
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145
+FATAL 2015-07-30 23:14:41,639 1369983ms ActionsModelView       StepIn             - System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Runtime.InteropServices.Marshal.GetObjectForNativeVariant(IntPtr pSrcNativeVariant)
+   在 System.Runtime.InteropServices.CustomMarshalers.EnumeratorViewOfEnumVariant.MoveNext()
+   在 WatiN.Core.Native.InternetExplorer.IEElementCollection.<AsNative>d__a.MoveNext()
+   在 WatiN.Core.NativeElementFinder.<WrapMatchingElements>d__b.MoveNext()
+   在 WatiN.Core.NativeElementFinder.<FindElementByTags>d__2.MoveNext()
+   在 WatiN.Core.ElementFinder.FindFirst()
+   在 WatiN.Core.Element.FindNativeElementInternal()
+   在 WatiN.Core.Element.get_Exists()
+   在 AutoRobo.Core.Actions.ActionPagination.ElementIsAvailable(Element element) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\Loop\ActionPagination.cs:行号 93
+   在 AutoRobo.Core.Actions.ActionPagination.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\Loop\ActionPagination.cs:行号 76
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145

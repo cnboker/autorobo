@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoScript StartUrl="https://www.google.com.hk/finance?hl=zh-CN&amp;gl=cn&amp;ei=KqLeUZC8BoXxkQWWwgE#stockscreener" Target="System" DataMethod="Collect">
+  <MainAction>
+    <Action ActionType="ActionNavigate" BindName="">https://www.google.com.hk/finance?hl=zh-CN&amp;gl=cn&amp;ei=KqLeUZC8BoXxkQWWwgE#stockscreener</Action>
+    <Action ActionType="ActionPagination" PageCount="1">
+      <Actions>
+        <Action ActionType="ActionWait" AttributeName="" AttributeValue="" AttributeRegex="0" WaitTimeout="3000">
+          <ElementType>TableCell</ElementType>
+          <FinderSet>
+            <Finder FindMethod="CssSelector" FindName="" FindValue="DIV#gf-viewc&gt;DIV&gt;DIV:eq(1)&gt;DIV:eq(1)&gt;DIV:eq(2)&gt;TABLE&gt;TBODY&gt;TR:eq(1)&gt;TD:eq(0)" Regex="0" />
+          </FinderSet>
+        </Action>
+        <Action ActionType="ActionForeach" FirstNumber="1" LastNumber="1" StepNumber="1">
+          <Actions>
+            <Action ActionType="ActionExtract" ObjectName="rowArray" PropertyName="Text" StringPattern.Expression="" StringPattern.Pattern="1" FliterEmptyString="0" IsContextBinding="1" ExtractType="0">
+              <ElementType>Link</ElementType>
+              <FinderSet>
+                <Finder FindMethod="CssSelector" FindName="" FindValue="td:eq(0)&gt;a" Regex="0" />
+              </FinderSet>
+            </Action>
+            <Action ActionType="ActionExtract" ObjectName="rowArray" PropertyName="Text" StringPattern.Expression="" StringPattern.Pattern="1" FliterEmptyString="0" IsContextBinding="1" ExtractType="0">
+              <ElementType>Link</ElementType>
+              <FinderSet>
+                <Finder FindMethod="CssSelector" FindName="" FindValue="td:eq(1)&gt;a" Regex="0" />
+              </FinderSet>
+            </Action>
+            <Action ActionType="ActionExtract" ObjectName="rowArray" PropertyName="Text" StringPattern.Expression="" StringPattern.Pattern="1" FliterEmptyString="0" IsContextBinding="1" ExtractType="0">
+              <ElementType>TableCell</ElementType>
+              <FinderSet>
+                <Finder FindMethod="CssSelector" FindName="" FindValue="td:eq(3)" Regex="0" />
+              </FinderSet>
+            </Action>
+            <Action ActionType="ActionExtract" ObjectName="rowArray" PropertyName="Text" StringPattern.Expression="" StringPattern.Pattern="1" FliterEmptyString="0" IsContextBinding="1" ExtractType="0">
+              <ElementType>TableCell</ElementType>
+              <FinderSet>
+                <Finder FindMethod="CssSelector" FindName="" FindValue="td:eq(4)" Regex="0" />
+              </FinderSet>
+            </Action>
+            <Action ActionType="ActionAddListToTableRow" ObjectName="rowArray" TableName="stocktable" />
+            <Action ActionType="ActionClearVariable" VariableName="rowArray" />
+          </Actions>
+          <ElementType>TableRow</ElementType>
+          <FinderSet>
+            <Finder FindMethod="CssSelector" FindName="" FindValue="DIV#gf-viewc&gt;DIV&gt;DIV:eq(1)&gt;DIV:eq(1)&gt;DIV:eq(2)&gt;TABLE&gt;TBODY&gt;TR" Regex="0" />
+          </FinderSet>
+        </Action>
+        <Action ActionType="ActionFileWriter" FileName="google.csv" HasHeaderRecord="0" VariableName="stocktable" FileType="0" />
+        <Action ActionType="ActionClearVariable" VariableName="stocktable" />
+      </Actions>
+      <ElementType>Div</ElementType>
+      <FinderSet>
+        <Finder FindMethod="CssSelector" FindName="" FindValue="DIV#gf-viewc&gt;DIV&gt;DIV:eq(1)&gt;DIV:eq(1)&gt;DIV:eq(2)&gt;TABLE&gt;TBODY&gt;TR:eq(21)&gt;TD&gt;A:eq(1)&gt;DIV&gt;DIV" Regex="0" />
+      </FinderSet>
+    </Action>
+  </MainAction>
+  <FunctionAction />
+  <VariableAction>
+    <Action ActionType="ActionIntegerVariable" Name="count" Direction="0" />
+    <Action ActionType="ActionArrayVariable" Name="rowArray" Direction="0" />
+    <Action ActionType="ActionTableVariable" Name="stocktable" Direction="0" />
+  </VariableAction>
+</AutoScript>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoScript Target="System" DataMethod="Collect">
+  <MainAction>
+    <Action ActionType="ActionCall" FunName="利润" />
+    <Action ActionType="ActionCall" FunName="现金流量" />
+    <Action ActionType="ActionCall" FunName="资产负债" />
+    <Action ActionType="ActionFileWriter" FileName="$stockCode.xls" HasHeaderRecord="0" VariableName="利润,现金流量,资产负债" FileType="2" />
+  </MainAction>
+  <FunctionAction>
+    <Action ActionType="ActionScriptPart" Name="利润">
+      <Actions>
+        <Action ActionType="ActionNavigate" BindName="">http://stockdata.stock.hexun.com/2008/lr.aspx?stockid=$stockCode&amp;accountdate=2013.03.15</Action>
+        <Action ActionType="ActionExtract" Title="提取表头内容" ObjectName="利润" PropertyName="Text" StringPattern.Expression="" StringPattern.Pattern="1" FliterEmptyString="0" IsContextBinding="0" ExtractType="1">
+          <ElementType>Div</ElementType>
+          <FinderSet>
+            <Finder FindMethod="CssSelector" FindName="" FindValue="SPAN#ControlEx1_lbl&gt;TBODY&gt;TR&gt;TD:nth-of-type(1)&gt;DIV" Regex="0" />
+          </FinderSet>
+        </Action>
+        <Action ActionType="ActionClick" Title="点击会计年度" NoWait="0">
+          <ElementType>Image</ElementType>
+          <FinderSet>
+            <Finder FindMethod="CssSelector" FindName="" FindValue="#allaccount img" Regex="0" />
+          </FinderSet>
+        </Action>
+        <Action ActionType="ActionExtract" Title="获取年度链接" ObjectName="urls" PropertyName="href" StringPattern.Expression="" StringPattern.Pattern="1" FliterEmptyString="0" IsContextBinding="0" ExtractType="0">
+          <ElementType>Link</ElementType>
+          <FinderSet>
+            <Finder FindMethod="CssSelector" FindName="" FindValue="DIV#divpop&gt;A" Regex="0" />
+          </FinderSet>
+        </Action>
+        <Action ActionType="ActionForeachByVariable" Title="遍历年度链接" VarName="urls" Reverse="1" TopN="-1">
+          <Actions>
+            <Action ActionType="ActionNavigate" BindName="urls.DataItem">http://stockdata.stock.hexun.com/2008/lr.aspx?stockid=300356&amp;accountdate=2014.03.15</Action>
+            <Action ActionType="ActionExtract" ObjectName="利润" PropertyName="Text" StringPattern.Expression="" StringPattern.Pattern="1" FliterEmptyString="0" IsContextBinding="0" ExtractType="1">
+              <ElementType>Div</ElementType>
+              <FinderSet>
+                <Finder FindMethod="CssSelector" FindName="" FindValue="SPAN#ControlEx1_lbl&gt;TBODY&gt;TR&gt;TD:nth-of-type(2)&gt;DIV" Regex="0" />
+              </FinderSet>
+            </Action>
+          </Actions>
+        </Action>
+        <Action ActionType="ActionClearVariable" VariableName="urls" />
+      </Actions>
+    </Action>
+    <Action ActionType="ActionScriptPart" Name="现金流量">
+      <Actions>
+        <Action ActionType="ActionNavigate" Title="打开现金流量页面" BindName="">http://stockdata.stock.hexun.com/2008/xjll.aspx?stockid=$stockCode&amp;accountdate=2013.03.15</Action>
+        <Action ActionType="ActionExtract" Title="提取表头内容" ObjectName="现金流量" PropertyName="Text" StringPattern.Expression="" StringPattern.Pattern="1" FliterEmptyString="0" IsContextBinding="0" ExtractType="1">
+          <ElementType>Element</ElementType>
+          <FinderSet>
+            <Finder FindMethod="CssSelector" FindName="" FindValue="SPAN#ControlEx1_lbl&gt;TBODY&gt;TR&gt;TD:nth-of-type(1)&gt;DIV&gt;STRONG" Regex="0" />
+          </FinderSet>
+        </Action>
+        <Action ActionType="ActionClick" Title="点击&quot;全部会计年度&quot;" NoWait="0">
+          <ElementType>Image</ElementType>
+          <FinderSet>
+            <Finder FindMethod="CssSelector" FindName="" FindValue="#allaccount img" Regex="0" />
+          </FinderSet>
+        </Action>
+        <Action ActionType="ActionExtract" Title="获取“全部年度”链接" ObjectName="urls" PropertyName="href" StringPattern.Expression="" StringPattern.Pattern="1" FliterEmptyString="0" IsContextBinding="0" ExtractType="0">
+          <ElementType>Link</ElementType>
+          <FinderSet>
+            <Finder FindMethod="CssSelector" FindName="" FindValue="DIV#divpop&gt;A" Regex="0" />
+          </FinderSet>
+        </Action>
+        <Action ActionType="ActionForeachByVariable" Title="遍历链接" VarName="urls" Reverse="1" TopN="-1">
+          <Actions>
+            <Action ActionType="ActionNavigate" BindName="urls.DataItem">http://stockdata.stock.hexun.com/2008/xjll.aspx?stockid=300356&amp;accountdate=2014.03.15</Action>
+            <Action ActionType="ActionExtract" Title="获取季度数据" ObjectName="现金流量" PropertyName="Text" StringPattern.Expression="" StringPattern.Pattern="1" FliterEmptyString="0" IsContextBinding="0" ExtractType="1">
+              <ElementType>Div</ElementType>
+              <FinderSet>
+                <Finder FindMethod="CssSelector" FindName="" FindValue="SPAN#ControlEx1_lbl&gt;TBODY&gt;TR&gt;TD:nth-of-type(2)&gt;DIV" Regex="0" />
+              </FinderSet>
+            </Action>
+          </Actions>
+        </Action>
+        <Action ActionType="ActionClearVariable" VariableName="urls" />
+      </Actions>
+    </Action>
+    <Action ActionType="ActionScriptPart" Name="资产负债">
+      <Actions>
+        <Action ActionType="ActionNavigate" BindName="">http://stockdata.stock.hexun.com/2008/zcfz.aspx?stockid=$stockCode&amp;accountdate=2013.03.15</Action>
+        <Action ActionType="ActionExtract" Title="获取表头内容" ObjectName="资产负债" PropertyName="Text" StringPattern.Expression="" StringPattern.Pattern="1" FliterEmptyString="0" IsContextBinding="0" ExtractType="1">
+          <ElementType>Element</ElementType>
+          <FinderSet>
+            <Finder FindMethod="CssSelector" FindName="" FindValue="SPAN#ControlEx1_lbl&gt;TBODY&gt;TR&gt;TD:nth-of-type(1)&gt;DIV&gt;STRONG" Regex="0" />
+          </FinderSet>
+        </Action>
+        <Action ActionType="ActionClick" Title="点击全部会计年度" NoWait="0">
+          <ElementType>Image</ElementType>
+          <FinderSet>
+            <Finder FindMethod="CssSelector" FindName="" FindValue="#allaccount img" Regex="0" />
+          </FinderSet>
+        </Action>
+        <Action ActionType="ActionExtract" Title="获取年度链接" ObjectName="urls" PropertyName="href" StringPattern.Expression="" StringPattern.Pattern="1" FliterEmptyString="0" IsContextBinding="0" ExtractType="0">
+          <ElementType>Link</ElementType>
+          <FinderSet>
+            <Finder FindMethod="CssSelector" FindName="" FindValue="DIV#divpop&gt;A" Regex="0" />
+          </FinderSet>
+        </Action>
+        <Action ActionType="ActionForeachByVariable" VarName="urls" Reverse="1" TopN="-1">
+          <Actions>
+            <Action ActionType="ActionNavigate" BindName="urls.DataItem">http://stockdata.stock.hexun.com/2008/zcfz.aspx?stockid=300356&amp;accountdate=2014.03.15</Action>
+            <Action ActionType="ActionExtract" ObjectName="资产负债" PropertyName="Text" StringPattern.Expression="" StringPattern.Pattern="1" FliterEmptyString="0" IsContextBinding="0" ExtractType="1">
+              <ElementType>Div</ElementType>
+              <FinderSet>
+                <Finder FindMethod="CssSelector" FindName="" FindValue="SPAN#ControlEx1_lbl&gt;TBODY&gt;TR&gt;TD:nth-of-type(2)&gt;DIV" Regex="0" />
+              </FinderSet>
+            </Action>
+          </Actions>
+        </Action>
+        <Action ActionType="ActionClearVariable" VariableName="urls" />
+      </Actions>
+    </Action>
+  </FunctionAction>
+  <VariableAction>
+    <Action ActionType="ActionArrayVariable" Name="urls" Direction="0" />
+    <Action ActionType="ActionArrayVariable" Name="arr" Direction="0" />
+    <Action ActionType="ActionIntegerVariable" Name="count" Direction="0" />
+    <Action ActionType="ActionTableVariable" Name="利润" Direction="0" />
+    <Action ActionType="ActionTableVariable" Name="现金流量" Direction="0" />
+    <Action ActionType="ActionTableVariable" Name="资产负债" Direction="0" />
+    <Action ActionType="ActionStringVariable" Value="300356" Name="stockCode" Direction="1" />
+  </VariableAction>
+</AutoScript>

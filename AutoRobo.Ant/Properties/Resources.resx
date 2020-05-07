@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="account" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\account.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ajaxMoniter" xml:space="preserve">
+    <value>if (!window.XMLHttpRequest) {
+
+    window.XMLHttpRequest = function () {
+        return new ActiveXObject('Microsoft.XMLHTTP');
+    }
+}
+function AjaxMonitorForWatiN() {
+    this.count = 0;
+
+    this.callback = function () {
+        this.count--;
+        if (this.count &gt; 0) return;
+        var c = typeof window.external.Call;
+        if (c == 'undefined') return;
+        window.external.Call('MatchHandler', { event: 'ajaxComplete' });
+    }
+}
+var ajaxWatin = new AjaxMonitorForWatiN();
+var xhr = [];
+(function (open) {
+    XMLHttpRequest.prototype.open = function (method, url) {
+        ajaxWatin.count++;
+        xhr.push(this);
+        if (typeof this.addEventListener != 'undefined') {
+            this.addEventListener("readystatechange", function () {
+                //console.log(ajaxWatin.count);
+                if (this.readyState == 4) {
+                    ajaxWatin.callback(this.responseText);
+                }
+            }, false);
+        } else {
+            waitComplete();
+        }
+        //open.call(this, method, url, async, user, pass);
+        open.apply(this, arguments)
+    };
+
+})(XMLHttpRequest.prototype.open);
+
+function waitComplete() {
+    var complete = true;
+    for (var i = 0; i &lt; xhr.length; i++) {
+        if (xhr[i].readyState != 4) {
+            complete = false;
+            break;
+        }
+    }
+    if (!complete) {
+        setTimeout(waitComplete, 200);
+    } else {
+        xhr = [];
+        ajaxWatin.callback();
+       
+    }
+}</value>
+  </data>
+  <data name="at" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\at.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="configButton" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ0SURBVFhHxVe7agJBFM0HpMrvJCSdCL6wEGEL0X+wFxFc
+        UdPZphYR/0G008oihEWwEBERsRZEJ3MGR8bZmd3Z7EYvDLjunXvO3NfeeXoKKMlk0kqlUmO6iLTGeBfQ
+        XDD1C7gMfPMcKYlYLPZCTxnP5XLPoKo5ucsT0MUe7IWNYMek2ul0+j2RSHyLLqYnK4vPRBIvXdiCTSMi
+        UKTGDooY35zUi4Bm78GXhAxuWRapVCrKmJsQwF7YEAh5kxDdjo3z+Zwcj0fSaDSYERpX0ul0yHQ6lfHZ
+        f3gHHehiz+l0YjZEEsBQhuKScGwzB+coIDEYDMh+v3cBy39AB7oA5yKTUCYmMpa7Cq4TDfii+ijAlhTK
+        uMsLl7K5xou7MApwHkJ+QF7WLhJyqcGVYaXf78uNqqwCdrVXJNNutwuLT7bbLclms/q2rWuv7XZbCw5i
+        zWaTFItFtvAbQDqBLVVvYG1b115VpQaA1Wol1zYzns/nyWazUXIYDoe678cYBK4vTfwtJ5S4v1armZi4
+        IROYAE7KQakLP+h648+ItYmIpEMToMZe70qgXq9r54FqtWriAFcIVNMNQeKoZLlcBk7C0WikT8K/liGS
+        sVAosAWv6CoAh0CZassQXUk15yGhvIwa+Zoqrddr70YktkW5FaONhpVut+vfioUZ7nEfo//8HJ/PZ2Lb
+        tugJ9+fYbyDp9XqsDfsJqgS68jyxWCxYu0Yyaidlv5Esk8mwjEdZyYL/8A46fCTDyUVxHAcl/KOdjqMe
+        SlutFqsCUSaTie05nkc9lqNP8NDR2fDL+G4Q5cWkVCo5s9ns0whcVHrY1UzH9O6XUxWRqK/nvxYcx8Vq
+        hs+VAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="cutInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cutInfo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="debugBtn" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEHSURBVGhD7ZdBCsJADEWLeAbBvRvP4h3EhXcRvJcILlx4
+        ka7cqgm0EMp0imkCCf0DgVll/n9/pp1pGgwQAAEQAAEQAAEQAAEQyERgTWKPVHeqluqbSfyWxN460Sy8
+        rxQemPyjID5NAich/kPzK9WealXAL9PRzF0SfQkDl4kVNKLdt6RcYJPdgEvE3k3dI45oQHsWXLxoEoAB
+        yyg0CViuP7vXogxo977r3eqfBMIbGP6J+V4kR0gDtbsQCx6amH3orBucC7fRXbdITzy0idp7QG6Z0Cb4
+        RfYcedRIEwfr+C37yTfxu2AmdAJjIFKcgVqKKb5CNQMpt43luUIvEAABEAABEFgmgR+RTuldITVqRgAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="docRefresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\docRefresh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="domReady" xml:space="preserve">
+    <value>if (typeof __domready == 'undefined') {
+    __domready = '';
+
+    function bindReady(handler) {
+
+        var called = false
+
+        function ready() {
+            if (called) return
+            called = true
+            handler()
+        }
+
+        if (document.addEventListener) { // native event
+            document.addEventListener("DOMContentLoaded", ready, false)
+        } 
+       if (document.attachEvent) {  // IE
+
+            try {
+                var isFrame = window.frameElement != null
+            } catch (e) { }
+            
+            // IE, the document is not inside a frame
+            if (document.documentElement.doScroll &amp;&amp; !isFrame) {               
+                function tryScroll() {
+                    if (called) return
+                    try {
+                        document.documentElement.doScroll("left")                                    
+                        ready();
+                    } catch (e) {
+                        setTimeout(tryScroll, 10)
+                    }
+                }
+                tryScroll()
+            }
+
+            // IE, the document is inside a frame
+            document.attachEvent("onreadystatechange", function () {                
+                if (document.readyState === "complete") {
+                    ready()
+                }
+            })
+
+        }
+
+        // Old browsers
+        if (window.addEventListener)
+            window.addEventListener('load', ready, false)
+        else if (window.attachEvent)
+            window.attachEvent('onload', ready)
+        else {
+            var fn = window.onload // very old browser, copy old onload
+            window.onload = function () { // replace by new onload and call the old one
+                fn &amp;&amp; fn()
+                ready()
+            }
+        }
+    }
+
+
+    var readyList = []
+
+    function onReady(handler) {
+
+        function executeHandlers() {
+
+            for (var i = 0; i &lt; readyList.length; i++) {                
+                readyList[i]()
+            }
+        }
+
+        if (!readyList.length) { // set handler on first run 
+            readyList.push(handler)
+            bindReady(executeHandlers)
+        } else {
+            readyList.push(handler)
+        }        
+    }
+
+    onReady(function () {        
+        window.external.DOMReady();
+    })
+
+}</value>
+  </data>
+  <data name="formDeserialize" xml:space="preserve">
+    <value>/**
+    * jQuery.deserialize plugin
+    * Fills elements in selected containers with data extracted from URLencoded string
+    * @param data URLencoded data
+    * @param clearForm if true form will be cleared prior to deserialization
+    */
+    $jq.fn.deserialize = function (data, clearForm) {
+        this.each(function () {
+            deserialize(this, data, !!clearForm);
+        });
+    };
+
+    /**
+    * Fills specified form with data extracted from string
+    * @param element form to fill
+    * @param data URLencoded data
+    * @param clearForm if true form will be cleared prior to deserialization
+    */
+    function deserialize(element, data, clearForm) {
+        var splits = decodeURIComponent(data).split('&amp;'),
+			i = 0,
+			split = null,
+			key = null,
+			value = null,
+			splitParts = null;
+
+        if (clearForm) {
+            $jq('input[type="checkbox"],input[type="radio"]', element).removeAttr('checked');
+            $jq('select,input[type="text"],input[type="password"],input[type="hidden"],textarea', element).val('');
+        }
+
+        var kv = {};
+        while (split = splits[i++]) {
+            splitParts = split.split('=');
+            key = splitParts[0] || '';
+            value = (splitParts[1] || '').replace(/\+/g, ' ');
+
+            if (key != '') {
+                if (key in kv) {
+                    if ($jq.type(kv[key]) !== 'array')
+                        kv[key] = [kv[key]];
+
+                    kv[key].push(value);
+                } else
+                    kv[key] = value;
+            }
+        }
+
+        for (key in kv) {
+            value = kv[key];
+
+            $jq('input[type="checkbox"][name="' + key + '"][value="' + value + '"],input[type="radio"][name="' + key + '"][value="' + value + '"]', element).attr('checked', 'checked');
+            $jq('select[name="' + key + '"],input[type="text"][name="' + key + '"],input[type="password"][name="' + key + '"],input[type="hidden"][name="' + key + '"],textarea[name="' + key + '"]', element).val(value);
+        }
+    }</value>
+  </data>
+  <data name="iframeMoniter" xml:space="preserve">
+    <value>(function () {
+        var count = 0, frames;
+        frames = document.getElementsByTagName("iframe");
+
+        document.attachEvent("onreadystatechange", function () {
+            if (document.readyState === "complete") {
+                count++;
+                statusCheck();
+            }
+        });
+        if (document.readyState === "complete") {
+            count++;
+            statusCheck();
+        }
+
+        for (var i = 0; i &lt; frames.length; ++i) {
+            var iframe = frames[i];
+            if (iframe.readyState == "complete") {
+                count++;
+                statusCheck();
+            } else {
+                if (navigator.userAgent.indexOf("MSIE") &gt; -1 &amp;&amp; !window.opera) {
+                    iframe.onreadystatechange = function () {
+                        if (iframe.readyState == "complete") {
+                            count++;
+                            statusCheck();
+                        }
+                    };
+                } else {
+                    iframe.onload = function () {
+                        count++;
+                        statusCheck();
+                    };
+                }
+            }
+        }
+
+        function statusCheck() {
+            if (count == 0) return;
+            var domLen = frames.length + 1;
+            if (count == domLen) {
+                count = 0;               
+                window.external.Call('MatchHandler', { event: 'iframeLoaded' });
+            }
+        }
+
+    } ());</value>
+  </data>
+  <data name="mail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mail.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgButton" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD7SURBVEhL7ZbtDYMgEIYZoSN0A4qG/4zgCB2hm3QER+gI
+        HaEjOAIjtPc2R9LqAdEK9YcmJgS497kvQaX2Z/MZ0FofjDH3tm2fJV5og6FKQoLjYKgSUUia/wFxGv0K
+        UfpxSaSIrgTqf4DBFhpfzSWmjry5WWtPM4E9bGA7t0YDw1yqM3nN8d4hlolcM/imac44DEjA0fgRhHjs
+        sIY9NJ+sbRYET+mDO74/OhYNcMxhjaNZDPIs0LG3EOrCUYfx53wOFosIok5qBhQ7UnB0G2zEyEQQpeZC
+        BtHCJlp/YNvJuSmBlgDGwhONXDOsdqLXA1W7JqpdfJv/BdgdfAFNur3HILiZVQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="nav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="register_email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\register_email.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="selection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\selection.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="taskButton" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGoSURBVGhD7ZnbccMgEEVVmx7/KcElpKOU4hJSQkpICbbI
+        DBoQQuzdB1qP4xmPf4Q4h32A5GGe54en74B+PMGvLL8o/+BIAIcPtk4EePBOBPjwDgRk8BcLZPDjOH6s
+        6XwPv1AhX1QDGfyyLLeUY5qmL7LEBQKn8JGHLNFZ4ChtqhspSaKjwGHBrjn/fcbQlOgkUKRNAI95LpLo
+        IFDNeRUJY4FmwYolDAWa8EnH+WGnk5EAGT6ZfxsD1YSBAAc+tlKyxMr9+Rc1ZQEJPCpx1xbI4MMKCRaH
+        EgnVCGTwYfMRwDcjkW1umhOFkCrBVyWKnVkoYLHy+7PRNsdWuOlRVSDQA76IRHHMZgr0hH+cHugYAn7g
+        GfuAL3hQwB88IpAWj3KrLJ7Img8xnC4UxzBqBnr3CsFzImApAMN7EmDBexFgw3sQEMFfLbCHN/1/QLsL
+        HcGHBkF+pYgCodcjL6vCysfr3QvUVv4lBFrwrlOIAu9WgArvVmB39toK9qjQzYsYniAZkHabWpeC7089
+        nME33g2gwJumEFVUeh28UNIJtcf/C2ivKHq/t4vAE1VBqCTqtvdlAAAAAElFTkSuQmCC
+</value>
+  </data>
+</root>

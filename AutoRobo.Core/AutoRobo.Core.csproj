@@ -1,0 +1,965 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5F04D1A-A40B-4136-8390-F3AEFF3C8F6C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoRobo.Core</RootNamespace>
+    <AssemblyName>AutoRobo.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\AutoRobo.Core.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\AutoRobo.Core.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr4.StringTemplate, Version=4.0.6.9004, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Antlr4.StringTemplate.4.0.6.9004\lib\net35\Antlr4.StringTemplate.dll</HintPath>
+    </Reference>
+    <Reference Include="CsvHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CsvHelper.2.2.2\lib\net40-client\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reflib\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SHDocVw">
+      <HintPath>..\reflib\Interop.SHDocVw.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jint">
+      <HintPath>..\reflib\Jint.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reflib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\reflib\Microsoft.mshtml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\AutoRobo.Maker\bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Win32.Hooks, Version=1.0.2908.36134, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reflib\Microsoft.Win32.Hooks.dll</HintPath>
+    </Reference>
+    <Reference Include="MouseKeyboardLibrary">
+      <HintPath>..\reflib\MouseKeyboardLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\reflib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Net.SourceForge.Koogra, Version=3.1.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reflib\Net.SourceForge.Koogra.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\reflib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ScintillaNET">
+      <HintPath>..\reflib\ScintillaNET.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceGrid, Version=4.11.2887.1415, Culture=neutral, PublicKeyToken=df6f5e538749e85d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reflib\SourceGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionBuilder\ActionAddListToListParamter.cs" />
+    <Compile Include="ActionBuilder\ActionClickParameter.cs" />
+    <Compile Include="ActionBuilder\ActionEventParameter.cs" />
+    <Compile Include="ActionBuilder\ActionNavigateParameter.cs" />
+    <Compile Include="ActionBuilder\ActionTypingParameter.cs" />
+    <Compile Include="ActionBuilder\MultiStepActionParameter.cs" />
+    <Compile Include="ActionBuilder\SelectParameter.cs" />
+    <Compile Include="ActionFliter.cs" />
+    <Compile Include="ActionsModelView.cs" />
+    <Compile Include="Actions\ActionOpenDetailPage.cs" />
+    <Compile Include="Actions\Condition\ActionGoTo.cs" />
+    <Compile Include="Actions\Data\ActionAddEmptyToList.cs" />
+    <Compile Include="Actions\Data\ActionAddItemToList.cs" />
+    <Compile Include="Actions\Data\ActionAddItemToStringVariable.cs" />
+    <Compile Include="Actions\Data\ActionAddListToTable.cs" />
+    <Compile Include="Actions\Data\ActionAddListToTableColumn.cs" />
+    <Compile Include="Actions\Data\ActionAddListToTableRow.cs" />
+    <Compile Include="Actions\ActionBrowser.cs" />
+    <Compile Include="Actions\Condition\ActionCondition.cs" />
+    <Compile Include="Actions\ActionDataBlock.cs" />
+    <Compile Include="Actions\Data\ActionExtract.cs" />
+    <Compile Include="Actions\Data\ExtractType.cs" />
+    <Compile Include="Actions\Data\StringPattern.cs" />
+    <Compile Include="Actions\InOut\ActionFileReader.cs" />
+    <Compile Include="Actions\InOut\Configuration\CSVSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\InOut\Configuration\ExcelSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\InOut\Configuration\IODirection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\InOut\Configuration\IOSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\InOut\Configuration\MssqlSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\InOut\FileType.cs" />
+    <Compile Include="Actions\InOut\ActionDatabaseWriter.cs" />
+    <Compile Include="Actions\Loop\ActionPagination.cs" />
+    <Compile Include="Actions\ModuleCall.cs" />
+    <Compile Include="Actions\Session\ActionRestoreSession.cs" />
+    <Compile Include="Actions\Session\ActionSaveSession.cs" />
+    <Compile Include="Actions\StringMode.cs" />
+    <Compile Include="Actions\InOut\ActionFileWriter.cs" />
+    <Compile Include="Actions\Variable\ActionAttributeObject.cs" />
+    <Compile Include="Actions\Variable\ActionStringVariable.cs" />
+    <Compile Include="Actions\Variable\ActionVariableDecrement.cs" />
+    <Compile Include="Actions\Variable\ActionVariableIncrement.cs" />
+    <Compile Include="Actions\Variable\ActionVariableReference.cs" />
+    <Compile Include="Actions\Variable\ActionArrayVariable.cs" />
+    <Compile Include="Actions\Variable\ActionClearVariable.cs" />
+    <Compile Include="Actions\Variable\ActionIntegerVariable.cs" />
+    <Compile Include="Actions\Data\NotPairElementException.cs" />
+    <Compile Include="Actions\Loop\ActionForeach.cs" />
+    <Compile Include="Actions\ActionBlock.cs" />
+    <Compile Include="Actions\ActionCall.cs" />
+    <Compile Include="Actions\Enum\ActionEnum.cs" />
+    <Compile Include="ActionBuilder\ActionFactory.cs" />
+    <Compile Include="ActionBuilder\ActionParameter.cs" />
+    <Compile Include="ActionBuilder\IActionParser.cs" />
+    <Compile Include="ActionList.cs" />
+    <Compile Include="Actions\Loop\ActionForeachByVariable.cs" />
+    <Compile Include="Actions\Enum\ActionStatue.cs" />
+    <Compile Include="Actions\ActionSubElements.cs" />
+    <Compile Include="Actions\Data\ActionFetchText.cs" />
+    <Compile Include="Actions\Variable\ActionTableVariable.cs" />
+    <Compile Include="Actions\Variable\ActionVariable.cs" />
+    <Compile Include="Actions\Enum\BreakpointIndicators.cs" />
+    <Compile Include="Actions\Enum\StatusIndicators.cs" />
+    <Compile Include="Actions\Variable\VariableDataType.cs" />
+    <Compile Include="AppContext.cs" />
+    <Compile Include="AsyncResult.cs" />
+    <Compile Include="BrowserWindow.cs" />
+    <Compile Include="Formatters\CasperjsCodeFormatterVisitor.cs" />
+    <Compile Include="Formatters\CodeCreator.cs" />
+    <Compile Include="Formatters\ICodeFormatterAcceptor.cs" />
+    <Compile Include="Formatters\ICodeFormatterVisitor.cs" />
+    <Compile Include="Formatters\TPLoader.cs" />
+    <Compile Include="IAppContext.cs" />
+    <Compile Include="ICustomIdentity.cs" />
+    <Compile Include="IIocContainer.cs" />
+    <Compile Include="Interface\IActionBlock.cs" />
+    <Compile Include="Interface\IElementBinding.cs" />
+    <Compile Include="Ioc.cs" />
+    <Compile Include="IO\DataTableReader.cs" />
+    <Compile Include="IO\ProjectHelper.cs" />
+    <Compile Include="Logger\ExceptionAlert.cs" />
+    <Compile Include="Interface\IViewArea.cs" />
+    <Compile Include="IServiceLocator.cs" />
+    <Compile Include="Logger\ILog.cs" />
+    <Compile Include="Models\ActionSchemaSet.cs" />
+    <Compile Include="Models\ActionType.cs" />
+    <Compile Include="Models\ActionXmlSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\AppState.cs" />
+    <Compile Include="Models\DataMethod.cs" />
+    <Compile Include="Models\IActionNameRepository.cs" />
+    <Compile Include="Models\IActionReadRepository.cs" />
+    <Compile Include="Models\IActionRepository.cs" />
+    <Compile Include="Models\IActionWriteRepository.cs" />
+    <Compile Include="Models\MainActionModel.cs" />
+    <Compile Include="Models\ModelSerilizer.cs" />
+    <Compile Include="Models\ModelSet.cs" />
+    <Compile Include="Actions\ActionAlertHandler.cs" />
+    <Compile Include="Actions\ActionBack.cs" />
+    <Compile Include="Actions\ActionBase.cs" />
+    <Compile Include="Actions\ActionCheckbox.cs" />
+    <Compile Include="Actions\ActionClick.cs" />
+    <Compile Include="Actions\ActionCloseWindow.cs" />
+    <Compile Include="Actions\ActionConfirmHandler.cs" />
+    <Compile Include="Actions\ActionDirectionKey.cs" />
+    <Compile Include="Actions\ActionDoubleClick.cs" />
+    <Compile Include="Actions\ActionElementBase.cs" />
+    <Compile Include="Actions\ActionFileDialog.cs" />
+    <Compile Include="Actions\ActionFireEvent.cs" />
+    <Compile Include="Actions\ActionForward.cs" />
+    <Compile Include="Actions\ActionJavascriptInterpreter.cs" />
+    <Compile Include="Actions\ActionKey.cs" />
+    <Compile Include="Actions\ActionMouse.cs" />
+    <Compile Include="Actions\ActionNavigate.cs" />
+    <Compile Include="Actions\ActionOpenWindow.cs" />
+    <Compile Include="Actions\ActionRadio.cs" />
+    <Compile Include="Actions\ActionRefresh.cs" />
+    <Compile Include="Actions\ActionScriptPart.cs" />
+    <Compile Include="Actions\ActionSelectList.cs" />
+    <Compile Include="Actions\ActionSleep.cs" />
+    <Compile Include="Actions\ActionSubmitClick.cs" />
+    <Compile Include="Actions\Condition\ActionConditionByAttribute.cs" />
+    <Compile Include="Actions\ActionThread.cs" />
+    <Compile Include="Actions\ActionTypeText.cs" />
+    <Compile Include="Actions\ActionValidateCode.cs" />
+    <Compile Include="Actions\ActionValidateImage.cs" />
+    <Compile Include="Actions\ActionWait.cs" />
+    <Compile Include="Actions\Enum\ElementTypes.cs" />
+    <Compile Include="Actions\Util\FindAttribute.cs" />
+    <Compile Include="Actions\Util\FindAttributeCollection.cs" />
+    <Compile Include="Actions\Enum\FindMethods.cs" />
+    <Compile Include="Actions\Util\IValidateGroup.cs" />
+    <Compile Include="Actions\Util\ValidateGroupCollection.cs" />
+    <Compile Include="Actions\Util\XPathConstraint.cs" />
+    <Compile Include="Actions\Util\XPathFinder.cs" />
+    <Compile Include="AppSettings.cs" />
+    <Compile Include="BrowserTypes.cs" />
+    <Compile Include="Models\ObservableObject.cs" />
+    <Compile Include="Models\SubActionModel.cs" />
+    <Compile Include="Models\UpdateDataArgs.cs" />
+    <Compile Include="Models\VariableActionModel.cs" />
+    <Compile Include="Models\VariableDirection.cs" />
+    <Compile Include="MyIE.cs" />
+    <Compile Include="RunningActionEventArgs.cs" />
+    <Compile Include="ScriptLoader.cs" />
+    <Compile Include="ServiceLocator.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControls\ActionBindingBridge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ActionBindingBridge.Designer.cs">
+      <DependentUpon>ActionBindingBridge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logger\frmException.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logger\frmException.Designer.cs">
+      <DependentUpon>frmException.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DTS\CsvContext.cs" />
+    <Compile Include="UserControls\DTS\DTSDirection.cs" />
+    <Compile Include="UserControls\DTS\DTSSession.cs" />
+    <Compile Include="UserControls\DTS\DTSWizardBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\DTS\MSSqlWizardQueryPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\DTS\MSSqlWizardQueryPage.Designer.cs">
+      <DependentUpon>MSSqlWizardQueryPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DTS\ExcelContext.cs" />
+    <Compile Include="UserControls\DTS\MsSqlContext.cs" />
+    <Compile Include="UserControls\TableVariableListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDatabaseWriter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDatabaseWriter.Designer.cs">
+      <DependentUpon>ucDatabaseWriter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucFileReader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucFileReader.Designer.cs">
+      <DependentUpon>ucFileReader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\VarManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\VarManager.Designer.cs">
+      <DependentUpon>VarManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizard\WizardContext.cs" />
+    <Compile Include="UserControls\DTS\Welcome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\DTS\Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizard\WizardPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizard\WizardPage.Designer.cs">
+      <DependentUpon>WizardPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DTS\CSVWizardPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\DTS\CSVWizardPage.Designer.cs">
+      <DependentUpon>CSVWizardPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DTS\MSSqlWizardPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\DTS\MSSqlWizardPage.Designer.cs">
+      <DependentUpon>MSSqlWizardPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DTS\ExcelWizardPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\DTS\ExcelWizardPage.Designer.cs">
+      <DependentUpon>ExcelWizardPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizard\WizardBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizard\WizardBook.Designer.cs">
+      <DependentUpon>WizardBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizard\WizardPageEventArgs.cs" />
+    <Compile Include="UserControls\Wizard\WizardPages.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\SetFieldsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\SetFieldsDialog.Designer.cs">
+      <DependentUpon>SetFieldsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\StringRegexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\StringRegexForm.Designer.cs">
+      <DependentUpon>StringRegexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucActionGoTo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucActionGoTo.Designer.cs">
+      <DependentUpon>ucActionGoTo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\OKDialogHandler.cs" />
+    <Compile Include="Logger\ActionException.cs" />
+    <Compile Include="Logger\HealthyTracer.cs" />
+    <Compile Include="Interface\ICoreBrowser.cs" />
+    <Compile Include="Interface\IEditorAction.cs" />
+    <Compile Include="Interface\INatualLinkCreator.cs" />
+    <Compile Include="Interface\INewWindow.cs" />
+    <Compile Include="Util\Macro\MacroEvent.cs" />
+    <Compile Include="Util\Macro\MacroEventType.cs" />
+    <Compile Include="Util\Macro\Macror.cs" />
+    <Compile Include="MyBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\MyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\MyDialog.Designer.cs">
+      <DependentUpon>MyDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ns\ElementWrapper.cs" />
+    <Compile Include="ns\JintCreator.cs" />
+    <Compile Include="ns\JsBrowser.cs" />
+    <Compile Include="ns\PromptDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ns\PromptDialog.Designer.cs">
+      <DependentUpon>PromptDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ns\Q.cs" />
+    <Compile Include="ns\StopJintException.cs" />
+    <Compile Include="Plugins\IPlugin.cs" />
+    <Compile Include="Plugins\IPluginHost.cs" />
+    <Compile Include="Plugins\PluginLoader.cs" />
+    <Compile Include="Plugins\PopIE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plugins\PopIE.Designer.cs">
+      <DependentUpon>PopIE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ActionRunnable.cs" />
+    <Compile Include="Selector\AddActionException.cs" />
+    <Compile Include="Selector\CssElement.cs" />
+    <Compile Include="Selector\ElementSelector.cs" />
+    <Compile Include="Selector\ElementsSelector.cs" />
+    <Compile Include="Selector\ISelector.cs" />
+    <Compile Include="Selector\ISelectors.cs" />
+    <Compile Include="Selector\LoopRowSelector.cs" />
+    <Compile Include="Selector\Selector.cs" />
+    <Compile Include="Util\SEO\LinkStyle.cs" />
+    <Compile Include="Util\SEO\NatualLinkCreator.cs" />
+    <Compile Include="Util\SEO\NLResult.cs" />
+    <Compile Include="Util\SEO\SeoMeta.cs" />
+    <Compile Include="StringWriterWithEncoding.cs" />
+    <Compile Include="UserControls\LoopProperty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\LoopProperty.Designer.cs">
+      <DependentUpon>LoopProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucActionAddListToTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucActionAddListToTable.Designer.cs">
+      <DependentUpon>ucActionAddListToTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucActionCall.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucActionCall.Designer.cs">
+      <DependentUpon>ucActionCall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucBrowser.Designer.cs">
+      <DependentUpon>ucBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCondition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCondition.Designer.cs">
+      <DependentUpon>ucCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucPagination.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucPagination.Designer.cs">
+      <DependentUpon>ucPagination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucFileWriter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucFileWriter.Designer.cs">
+      <DependentUpon>ucFileWriter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSelectVariable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSelectVariable.Designer.cs">
+      <DependentUpon>ucSelectVariable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSession.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSession.Designer.cs">
+      <DependentUpon>ucSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucVariable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucVariable.Designer.cs">
+      <DependentUpon>ucVariable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucLoopByArray.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucLoopByArray.Designer.cs">
+      <DependentUpon>ucLoopByArray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucLoopByElements.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucLoopByElements.Designer.cs">
+      <DependentUpon>ucLoopByElements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucScriptPartStep1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucScriptPartStep1.Designer.cs">
+      <DependentUpon>ucScriptPartStep1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucAddDataToList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucAddDataToList.Designer.cs">
+      <DependentUpon>ucAddDataToList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucThread.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucThread.Designer.cs">
+      <DependentUpon>ucThread.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\VariableData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\VariableData.Designer.cs">
+      <DependentUpon>VariableData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\App.cs" />
+    <Compile Include="Util\BrowserExtensions.cs" />
+    <Compile Include="Util\CacheExtensions.cs" />
+    <Compile Include="Util\CrossFrameIE.cs" />
+    <Compile Include="Util\ElementExtensions.cs" />
+    <Compile Include="Util\EmailException.cs" />
+    <Compile Include="Util\ExcelReader.cs" />
+    <Compile Include="Util\ExcelWriter.cs" />
+    <Compile Include="Util\JS.cs" />
+    <Compile Include="Util\Watcher.cs" />
+    <Compile Include="UserControls\codeRichEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\codeRichEditor.Designer.cs">
+      <DependentUpon>codeRichEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\IniLexer.cs" />
+    <Compile Include="UserControls\ucBaseEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucBaseEditor.Designer.cs">
+      <DependentUpon>ucBaseEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucBaseElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucBaseElement.Designer.cs">
+      <DependentUpon>ucBaseElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCheckBox.Designer.cs">
+      <DependentUpon>ucCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucClick.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucClick.Designer.cs">
+      <DependentUpon>ucClick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucConfirm.Designer.cs">
+      <DependentUpon>ucConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucDirectKey.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDirectKey.Designer.cs">
+      <DependentUpon>ucDirectKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucElementsContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucElementsContainer.Designer.cs">
+      <DependentUpon>ucElementsContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucFileUpload.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucFileUpload.Designer.cs">
+      <DependentUpon>ucFileUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucFireEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucFireEvent.Designer.cs">
+      <DependentUpon>ucFireEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucJavascriptInterpreter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucJavascriptInterpreter.Designer.cs">
+      <DependentUpon>ucJavascriptInterpreter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucKey.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucKey.Designer.cs">
+      <DependentUpon>ucKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucMouse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucMouse.Designer.cs">
+      <DependentUpon>ucMouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucNavigate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucNavigate.Designer.cs">
+      <DependentUpon>ucNavigate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSelectList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSelectList.Designer.cs">
+      <DependentUpon>ucSelectList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSelector.Designer.cs">
+      <DependentUpon>ucSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSleep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSleep.Designer.cs">
+      <DependentUpon>ucSleep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSubmitClick.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSubmitClick.Designer.cs">
+      <DependentUpon>ucSubmitClick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTestElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTestElement.Designer.cs">
+      <DependentUpon>ucTestElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTypeText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTypeText.Designer.cs">
+      <DependentUpon>ucTypeText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucValidateCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucValidateCode.Designer.cs">
+      <DependentUpon>ucValidateCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucValidateImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucValidateImage.Designer.cs">
+      <DependentUpon>ucValidateImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucWait.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWait.Designer.cs">
+      <DependentUpon>ucWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ValidateCodeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\ValidateCodeDialog.Designer.cs">
+      <DependentUpon>ValidateCodeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinformBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UserControls\ActionBindingBridge.resx">
+      <DependentUpon>ActionBindingBridge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logger\frmException.resx">
+      <DependentUpon>frmException.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\DTS\MSSqlWizardPage.resx">
+      <DependentUpon>MSSqlWizardPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\DTS\Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucDatabaseWriter.resx">
+      <DependentUpon>ucDatabaseWriter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucFileReader.resx">
+      <DependentUpon>ucFileReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\VarManager.resx">
+      <DependentUpon>VarManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Wizard\WizardPage.resx">
+      <DependentUpon>WizardPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\DTS\CSVWizardPage.resx">
+      <DependentUpon>CSVWizardPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\DTS\ExcelWizardPage.resx">
+      <DependentUpon>ExcelWizardPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Wizard\WizardBook.resx">
+      <DependentUpon>WizardBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SetFieldsDialog.resx">
+      <DependentUpon>SetFieldsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\StringRegexForm.resx">
+      <DependentUpon>StringRegexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucActionGoTo.resx">
+      <DependentUpon>ucActionGoTo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ns\PromptDialog.resx">
+      <DependentUpon>PromptDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\PopIE.resx">
+      <DependentUpon>PopIE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\codeRichEditor.resx">
+      <DependentUpon>codeRichEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\LoopProperty.resx">
+      <DependentUpon>LoopProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucActionAddListToTable.resx">
+      <DependentUpon>ucActionAddListToTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucActionCall.resx">
+      <DependentUpon>ucActionCall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucBaseEditor.resx">
+      <DependentUpon>ucBaseEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucBaseElement.resx">
+      <DependentUpon>ucBaseElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucBrowser.resx">
+      <DependentUpon>ucBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCheckBox.resx">
+      <DependentUpon>ucCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucClick.resx">
+      <DependentUpon>ucClick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCondition.resx">
+      <DependentUpon>ucCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucConfirm.resx">
+      <DependentUpon>ucConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucDirectKey.resx">
+      <DependentUpon>ucDirectKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucElementsContainer.resx">
+      <DependentUpon>ucElementsContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucFileUpload.resx">
+      <DependentUpon>ucFileUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucFireEvent.resx">
+      <DependentUpon>ucFireEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucPagination.resx">
+      <DependentUpon>ucPagination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucFileWriter.resx">
+      <DependentUpon>ucFileWriter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucSelectVariable.resx">
+      <DependentUpon>ucSelectVariable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucSession.resx">
+      <DependentUpon>ucSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucVariable.resx">
+      <DependentUpon>ucVariable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucJavascriptInterpreter.resx">
+      <DependentUpon>ucJavascriptInterpreter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucKey.resx">
+      <DependentUpon>ucKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucLoopByArray.resx">
+      <DependentUpon>ucLoopByArray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucLoopByElements.resx">
+      <DependentUpon>ucLoopByElements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucMouse.resx">
+      <DependentUpon>ucMouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucNavigate.resx">
+      <DependentUpon>ucNavigate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucScriptPartStep1.resx">
+      <DependentUpon>ucScriptPartStep1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucSelectList.resx">
+      <DependentUpon>ucSelectList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucSelector.resx">
+      <DependentUpon>ucSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucSleep.resx">
+      <DependentUpon>ucSleep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucSubmitClick.resx">
+      <DependentUpon>ucSubmitClick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTestElement.resx">
+      <DependentUpon>ucTestElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucAddDataToList.resx">
+      <DependentUpon>ucAddDataToList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucThread.resx">
+      <DependentUpon>ucThread.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTypeText.resx">
+      <DependentUpon>ucTypeText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucValidateCode.resx">
+      <DependentUpon>ucValidateCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucValidateImage.resx">
+      <DependentUpon>ucValidateImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucWait.resx">
+      <DependentUpon>ucWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ValidateCodeDialog.resx">
+      <DependentUpon>ValidateCodeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\VariableData.resx">
+      <DependentUpon>VariableData.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\3rd\WatiN.Core\source\src\Core\WatiN.Core.csproj">
+      <Project>{217e2d34-f6df-431b-ac5a-b368f481a530}</Project>
+      <Name>WatiN.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRobo.DataMapping\AutoRobo.DataMapping.csproj">
+      <Project>{9CFDEA39-275B-4245-BDE7-D96FD28D7EE4}</Project>
+      <Name>AutoRobo.DataMapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRobo.DB\AutoRobo.DB.csproj">
+      <Project>{23b83ead-51a4-452c-a5fd-cc21acffa889}</Project>
+      <Name>AutoRobo.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRobo.WebApi\AutoRobo.WebApi.csproj">
+      <Project>{85f90361-2b8f-4f07-b41a-5549797b0bb6}</Project>
+      <Name>AutoRobo.WebApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRobo.WebHelper\AutoRobo.WebHelper.csproj">
+      <Project>{C3642563-DC8D-4200-A399-1F5B1B2A298E}</Project>
+      <Name>AutoRobo.WebHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\csExWB\csExWB.csproj">
+      <Project>{e8e8bb5d-3302-4763-94f2-a8a238f7d6ea}</Project>
+      <Name>csExWB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formatters\CasperjsTemplate\ActionTypeText.st" />
+    <EmbeddedResource Include="Formatters\CasperjsTemplate\ActionAddItemToList.st" />
+    <EmbeddedResource Include="Formatters\CasperjsTemplate\ActionDoubleClick.st" />
+    <EmbeddedResource Include="Formatters\CasperjsTemplate\ActionKey.st" />
+    <EmbeddedResource Include="Formatters\CasperjsTemplate\ActionMouse.st" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formatters\CasperjsTemplate\Assert.st" />
+    <EmbeddedResource Include="Formatters\CasperjsTemplate\ActionAddItemToStringVariable.st" />
+    <None Include="Resources\1369654724_wizard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formatters\CasperjsTemplate\FindId.st" />
+    <EmbeddedResource Include="Formatters\CasperjsTemplate\ActionSelectList.st" />
+    <EmbeddedResource Include="Formatters\CasperjsTemplate\ActionSleep.st" />
+    <EmbeddedResource Include="Formatters\CasperjsTemplate\ChainedSelect.st" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>if /I "$(ConfigurationName)" == "Release" Eazfuscator.NET.exe "$(TargetPath)" --msbuild-project-path "$(ProjectPath)" --msbuild-project-configuration "$(ConfigurationName)" --msbuild-project-platform "$(PlatformName)" --msbuild-solution-path "$(SolutionPath)" -n --newline-flush -v 3.3
+    if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\x86\*.*" "$(TargetDir)x86"
+    if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\amd64\*.*" "$(TargetDir)amd64"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

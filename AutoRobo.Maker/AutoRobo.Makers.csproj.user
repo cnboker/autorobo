@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>d:\mywebsite\autoRobo\release\autoRobo.Maker\|ftp://115.28.170.78/ebotop.com/web/download/|http://www.ebotop.com/download/update/|f:\mywebsite\autoRobo\release\autoRobo.Maker\</PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory>http://www.ebotop.com</SupportUrlHistory>
+    <UpdateUrlHistory>http://localhost:8000/download/update/|http://localhost:8000/download/update/AutoRobo.Makers.application/|http://www.ebotop.com/download/update/|http://www.ebotop.com/client/|http://www.cnboker.com/client/</UpdateUrlHistory>
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>zh-CN</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+</Project>

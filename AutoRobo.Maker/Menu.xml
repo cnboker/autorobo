@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <MenuItem Name="Click" Text="鼠标点击" Action="ActionClick" Shortcut=""/>
+  <MenuItem Name="TypeText" Text="输入文本" Action="ActionTypeText" Shortcut=""/>
+  <MenuItem Name="SelectList" Text="下拉列表选择" Action="ActionSelectList" Shortcut=""/>
+  <MenuItem Name="Navigate" Text="导航" Action="ActionNavigate"></MenuItem>
+  <MenuItem Name="Spliter1" Text="-"></MenuItem>
+  <!--<MenuItem Name="Mouse" Text="鼠标">
+    <Items>
+      <MenuItem Name="DoubleClick" Text="鼠标双击" Action="ActionDoubleClick"></MenuItem>
+      <MenuItem Name="MouseEnter" Text="鼠标进入" Action="ActionMouse"></MenuItem>
+      <MenuItem Name="MouseDown" Text="鼠标按下" Action="ActionMouse"></MenuItem>
+      <MenuItem Name="MouseUp" Text="鼠标释放" Action="ActionMouse"></MenuItem>
+    </Items>
+  </MenuItem>
+  <MenuItem Name="Keyword" Text="键盘">
+    <Items>
+      <MenuItem Name="KeyInput" Text="键盘输入" Action="ActionKey"></MenuItem>
+      <MenuItem Name="KeyDown" Text="键盘按下" Action="ActionKey"></MenuItem>
+      <MenuItem Name="KeyUp" Text="键盘释放" Action="ActionKey"></MenuItem>
+    </Items>
+  </MenuItem>
+  <MenuItem Name="Window" Text="窗口">
+    <Items>
+      <MenuItem Name="Navigate" Text="导航" Action="ActionNavigate"></MenuItem>
+      <MenuItem Name="WindowOpen" Text="打开新窗口" Action="ActionOpenWindow"></MenuItem>
+      <MenuItem Name="WindowClolse" Text="关闭窗口" Action="ActionCloseWindow"></MenuItem>
+    </Items>
+  </MenuItem>
+  <MenuItem Name="Page" Text="页面">
+    <Items>
+      <MenuItem Name="NewPage" Text="新页面" Action="ActionBrowser"></MenuItem>
+      <MenuItem Name="PageForward" Text="前进" Action="ActionForward"></MenuItem>
+      <MenuItem Name="PageBack" Text="后退" Action="ActionBack"></MenuItem>
+      <MenuItem Name="PageRefresh" Text="刷新" Action="ActionRefresh"></MenuItem>
+    </Items>
+  </MenuItem>-->
+  <MenuItem Name="Form" Text="表单">
+    <Items>
+      <MenuItem Name="TypeText1" Text="输入文本" Action="ActionTypeText"></MenuItem>
+      <MenuItem Name="SelectList1" Text="下拉列表选择" Action="ActionSelectList"></MenuItem>
+      <MenuItem Name="SetRadiobox" Text="设置单选框" Action="ActionRadio"></MenuItem>
+      <MenuItem Name="SetCheckbox" Text="设置复选框" Action="ActionCheckbox"></MenuItem>
+      <MenuItem Name="FileUpload" Text="文件上传" Action="ActionFileDialog"></MenuItem>
+      <MenuItem Name="AddChildElements" Text="添加子元素" Action="ActionSubElements"></MenuItem>
+      <MenuItem Name="ValidateCode" Text="验证码输入框" Action="ActionValidateCode"></MenuItem>
+      <MenuItem Name="ValidateImage" Text="验证码" Action="ActionValidateImage"></MenuItem>
+      <MenuItem Name="SubmitButton" Text="提交表单" Action="ActionSubmitClick"></MenuItem>
+    </Items>
+  </MenuItem>
+  <MenuItem Name="Delay" Text="延时" Action="ActionSleep"></MenuItem>
+  <MenuItem Name="FireEvent" Text="事件触发" Action="ActionFireEvent"></MenuItem>
+  <MenuItem Name="ElementWait" Text="元素等待" Action="ActionWait"></MenuItem>
+  <MenuItem Name="Spliter2" Text="-"></MenuItem>
+  <!--<MenuItem Name="Javascript" Text="执行脚本" Action="ActionJavascriptInterpreter"></MenuItem>-->
+  <MenuItem Name="Function" Text="过程" Action="ActionScriptPart"></MenuItem>
+  <MenuItem Name="CallFunction" Text="过程调用" Action="ActionCall"></MenuItem>
+  <!--<MenuItem Name="CallModule" Text="模块调用" Action="ModuleCall"></MenuItem>-->
+  <!--<MenuItem Name="Thread" Text="线程" Action="ActionThread"></MenuItem>-->
+  <MenuItem Name="Variable" Text="变量">
+    <Items>
+      <MenuItem Name="VariableIncrement" Text="变量加1" Action="ActionVariableIncrement"></MenuItem>
+      <MenuItem Name="VariableDecrement" Text="变量减1" Action="ActionVariableDecrement"></MenuItem>
+      <MenuItem Name="ActionClearVariable" Text="清除变量数据" Action="ActionClearVariable"></MenuItem>
+    </Items>
+  </MenuItem>
+  <!--<MenuItem Name="Session" Text="Session">
+        <Items>
+            <MenuItem Name="SaveSession" Text="保存Session" Action="ActionSaveSession"></MenuItem>
+            <MenuItem Name="RestoreSession" Text="恢复Session" Action="ActionRestoreSession"></MenuItem>
+        </Items>
+    </MenuItem>-->
+  <MenuItem Name="Data" Text="数据采集">
+    <Items>
+      <MenuItem Name="Extract" Text="提取内容" Action="ActionExtract"></MenuItem>
+      <!--<MenuItem Name="AddMutiContentToTableColumn" Text="增加多项到表列" Action="ActionAddMutiContentToTableColumn"></MenuItem>
+      <MenuItem Name="AddMutiContentToTableRow" Text="增加多项到表行" Action="ActionAddMutiContentToTableRow"></MenuItem>-->
+      <MenuItem Name="GotoDetailPage" Text="打开详情页面" Action="ActionOpenDetailPage"></MenuItem>
+      <!--<MenuItem Name="AddItemToList" Text="增加单项到数组" Action="ActionAddItemToList"></MenuItem>
+      <MenuItem Name="ActionAddItemToStringVariable" Text="增加单项到字符串变量" Action="ActionAddItemToStringVariable"></MenuItem>
+      <MenuItem Name="AddChildrenToList" Text="增加子元素到数组" Action="AddChildrenToList"></MenuItem>
+      <MenuItem Name="AddListToList" Text="增加多项到数组" Action="ActionAddListToList"></MenuItem>-->
+      <MenuItem Name="AddListToTableColumn" Text="增加数组数据到表列" Action="ActionAddListToTableColumn"></MenuItem>
+      <MenuItem Name="AddListToTableRow" Text="增加数组数据到表行" Action="ActionAddListToTableRow"></MenuItem>
+      <!--<MenuItem Name="ActionElementNotExistAddEmptyToList" Text="元素不存在增加空字符串到数组" Action="ActionElementNotExistAddEmptyToList"></MenuItem>-->
+    </Items>
+  </MenuItem>
+  <MenuItem Name="Foreach" Text="遍历">
+    <Items>
+      <!--<MenuItem Name="ForeachByTag" Text="通过元素标签遍历" Action="ActionForeachByTag"></MenuItem>-->
+      <MenuItem Name="ForeachByElements" Text="通过元素遍历" Action="ActionForeach"></MenuItem>
+      <!--<MenuItem Name="ForeachByUrl" Text="通过Url遍历" Action="ActionForeachByUrl"></MenuItem>-->
+      <MenuItem Name="ForeachByList" Text="通过变量遍历" Action="ActionForeachByVariable"></MenuItem>
+      <MenuItem Name="Pagination" Text="分页" Action="ActionPagination"></MenuItem>
+    </Items>
+  </MenuItem>
+  <MenuItem Name="Conditions" Text="条件">
+    <Items>
+      <!--<MenuItem Name="Goto" Text="Goto" Action="ActionGoTo"></MenuItem>-->
+      <MenuItem Name="TestTag" Text="元素测试" Action="ActionCondition"></MenuItem>
+      <MenuItem Name="TestAttribute" Text="元素属性测试" Action="ActionConditionByAttribute"></MenuItem>
+    </Items>
+  </MenuItem>
+  <MenuItem Name="InOut" Text="输入输出">
+    <Items>
+      <!--<MenuItem Name="QueryDatabase" Text="数据库查询" Action="ActionQueryDatabase"></MenuItem>
+            <MenuItem Name="ExecuteSql" Text="执行SQL" Action="ActionExecuteSql"></MenuItem>
+            <MenuItem Name="CallWebService" Text="调用服务" Action="ActionCallWebService"></MenuItem>
+            <MenuItem Name="SendEmail" Text="发送EMAIL" Action="ActionSendEmail"></MenuItem>            
+            <MenuItem Name="ReadCSV" Text="读CSV文件" Action="ActionReadCSV"></MenuItem>-->
+      <MenuItem Name="ReadFile" Text="读文件" Action="ActionFileReader"></MenuItem>
+      <MenuItem Name="WriteFile" Text="写文件" Action="ActionFileWriter"></MenuItem>
+      <MenuItem Name="WriteDatabase" Text="写数据库" Action="ActionDatabaseWriter"></MenuItem>
+    </Items>
+  </MenuItem>
+</Menu>

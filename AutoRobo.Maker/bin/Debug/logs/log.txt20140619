@@ -1,0 +1,33 @@
+FATAL 2014-06-19 09:46:30,110 42606ms ActionsModelView       StepIn             - System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.StubHelpers.StubHelpers.DemandPermission(IntPtr pNMD)
+   在 WatiN.Core.Native.Windows.IEnumUnknown.Next(Int32 celt, Object& rgelt, Int32& pceltFetched)
+   在 WatiN.Core.Native.InternetExplorer.IEUtils.EnumIWebBrowser2Interfaces(IWebBrowser2Processor processor)
+   在 WatiN.Core.Native.InternetExplorer.IEWaitForComplete.WaitForFramesToComplete(IHTMLDocument2 maindocument)
+   在 WatiN.Core.IE.WaitForComplete(Int32 waitForCompleteTimeOut)
+   在 WatiN.Core.Element.FireEvent(String eventName, Boolean waitForComplete, NameValueCollection eventProperties)
+   在 WatiN.Core.Element.ClickImpl(Boolean waitforComplete)
+   在 AutoRobo.Core.Actions.ActionPagination.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\Loop\ActionPagination.cs:行号 64
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145
+FATAL 2014-06-19 10:02:39,000 1011496ms ActionsModelView       StepIn             - System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.SleepInternal(Int32 millisecondsTimeout)
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 135
+   在 AutoRobo.Core.ActionsModelView.Run() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 61
+   在 AutoRobo.Core.Actions.ActionBlock.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\ActionBlock.cs:行号 38
+   在 AutoRobo.Core.Actions.ActionPagination.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\Loop\ActionPagination.cs:行号 75
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145
+FATAL 2014-06-19 10:13:56,441 1688936ms ActionsModelView       StepIn             - System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.SleepInternal(Int32 millisecondsTimeout)
+   在 System.Threading.Thread.Sleep(TimeSpan timeout)
+   在 WatiN.Core.UtilityClasses.TryFuncUntilTimeOut.Try[T](DoFunc`1 func)
+   在 WatiN.Core.WaitForCompleteBase.WaitUntil(DoFunc`1 waitWhile, BuildTimeOutExceptionMessage exceptionMessage)
+   在 WatiN.Core.Native.InternetExplorer.IEWaitForComplete.WaitUntilNotNull(DoFunc`1 func, BuildTimeOutExceptionMessage exceptionMessage)
+   在 WatiN.Core.Native.InternetExplorer.IEWaitForComplete.WaitForCompleteOrTimeout()
+   在 WatiN.Core.IE.WaitForComplete(Int32 waitForCompleteTimeOut)
+   在 WatiN.Core.Element.ClickImpl(Boolean waitforComplete)
+   在 AutoRobo.Core.Actions.ActionPagination.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\Loop\ActionPagination.cs:行号 78
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145
+FATAL 2014-06-19 10:14:57,328 1749823ms csExWB                 2.DocumentComplete - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 csExWB.cEXWB.SHDocVw.DWebBrowserEvents2.DocumentComplete(Object pDisp, Object& URL) 位置 d:\mywebsite\autorobo\src\csExWB\cEXWB.cs:行号 4257
+FATAL 2014-06-19 10:15:27,451 1779947ms ActionsModelView       StepIn             - System.Threading.ThreadAbortException: 正在中止线程。
+   在 AutoRobo.Core.Actions.ActionNavigate.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\ActionNavigate.cs:行号 130
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145

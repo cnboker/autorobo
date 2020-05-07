@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="RemoveAllCookies" xml:space="preserve">
+    <value>Proceed to remove all cookies?</value>
+  </data>
+  <data name="SearchURL" xml:space="preserve">
+    <value>http://www.google.com/search?q={0}&amp;btnG=Google+Search&amp;meta=</value>
+  </data>
+  <data name="SaveErrorNotSaved" xml:space="preserve">
+    <value>Save Error - Not Saved</value>
+  </data>
+  <data name="UnknownItem" xml:space="preserve">
+    <value>// Unknown Item </value>
+  </data>
+  <data name="EraseAndContinueLoading" xml:space="preserve">
+    <value>You have an unsaved script, and loading will erase it.  Erase and continue loading?</value>
+  </data>
+  <data name="RemoveAllCacheEntries" xml:space="preserve">
+    <value>Remove all cache entries?</value>
+  </data>
+  <data name="NoMoreMatchesFound" xml:space="preserve">
+    <value>No more matches found for {0}</value>
+  </data>
+  <data name="showDialogBug" xml:space="preserve">
+    <value>An HTML Dialog cannot be tracked by this application.
+If you know someone at Microsoft who can change this, we'd love to support it. (MSDN KB251128)
+
+Continue opening the page?</value>
+  </data>
+  <data name="SendMailError" xml:space="preserve">
+    <value>Send Mail Error</value>
+  </data>
+  <data name="NoDefault" xml:space="preserve">
+    <value>No Default</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="ErrorLineListing" xml:space="preserve">
+    <value>{4} [{0}] at Line {1} Column {2}: {3}</value>
+  </data>
+  <data name="CompileSuccessfulButCantFind" xml:space="preserve">
+    <value>Compile successful, but can't find {0}</value>
+  </data>
+  <data name="CompilePathCouldNotBeCreated" xml:space="preserve">
+    <value>Compile Path ({0}) could not be created.  Please modify it in the Settings.</value>
+  </data>
+  <data name="DeleteSelectedItems" xml:space="preserve">
+    <value>Delete {0} selected items?</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="IeToolbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IeToolbar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FindInPage" xml:space="preserve">
+    <value>Find in Page</value>
+  </data>
+  <data name="TestNameCanContainOnlyAZAnd09" xml:space="preserve">
+    <value>Test name can contain only A-Z and 0-9</value>
+  </data>
+  <data name="ErrorsCompilingYourScript" xml:space="preserve">
+    <value>There were errors compiling your script:
+{0}</value>
+  </data>
+  <data name="CacheCookieFound" xml:space="preserve">
+    <value>Found {0}{1}</value>
+  </data>
+  <data name="CompilingCompletedWithNoErrors" xml:space="preserve">
+    <value>Compiling completed with no errors</value>
+  </data>
+  <data name="SendCanceled" xml:space="preserve">
+    <value>[{0}] Send cancelled</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="DOMErrorHighlighting" xml:space="preserve">
+    <value>DOM Error Highlighting</value>
+  </data>
+  <data name="CompilerError" xml:space="preserve">
+    <value>Compiler Error: {0}</value>
+  </data>
+  <data name="CanNotDoMultiFileDrop" xml:space="preserve">
+    <value>Can not do multi-file drop!</value>
+  </data>
+  <data name="ListOfResources" xml:space="preserve">
+    <value>List of resources:</value>
+  </data>
+  <data name="ConfirmationRequired" xml:space="preserve">
+    <value>Confirmation Required</value>
+  </data>
+  <data name="splashScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\splashscreen.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChangeLanguage" xml:space="preserve">
+    <value>Change Language</value>
+  </data>
+  <data name="FoundMatches" xml:space="preserve">
+    <value>Found {0} matches</value>
+  </data>
+  <data name="NoTestsToCompile" xml:space="preserve">
+    <value>No tests to compile</value>
+  </data>
+  <data name="FunctionExplorer" xml:space="preserve">
+    <value>Function Explorer - {0}</value>
+  </data>
+  <data name="CompilingCompletedWithNoErrorsRunningNow" xml:space="preserve">
+    <value>Compiling completed with no errors, running now</value>
+  </data>
+  <data name="TargetTemplateIsSetNotToCompile" xml:space="preserve">
+    <value>Target template is set not to compile</value>
+  </data>
+  <data name="NecessaryCodeFilesCouldNotBeFound" xml:space="preserve">
+    <value>Necessary code files could not be found.</value>
+  </data>
+  <data name="RemoveCookiesFromPath" xml:space="preserve">
+    <value>Remove cookies from {0} ?</value>
+  </data>
+  <data name="UnsavedScript_title" xml:space="preserve">
+    <value>未保存的脚本</value>
+  </data>
+  <data name="Test_Source_Tab" xml:space="preserve">
+    <value>Test Source - {0}</value>
+  </data>
+  <data name="ConfirmationRequested" xml:space="preserve">
+    <value>Confirmation Requested</value>
+  </data>
+  <data name="TestsMustHaveAName" xml:space="preserve">
+    <value>Tests must have a name.</value>
+  </data>
+  <data name="NoItemsFound" xml:space="preserve">
+    <value>No Items Found</value>
+  </data>
+  <data name="progress_spinner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\progress_spinner.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NoDefaultTemplateSelected" xml:space="preserve">
+    <value>No default template has been selected.  Please select from the list.</value>
+  </data>
+  <data name="UnsavedScript" xml:space="preserve">
+    <value>是否将脚本更改保存?</value>
+  </data>
+  <data name="HidePassword" xml:space="preserve">
+    <value>Hide Password</value>
+  </data>
+  <data name="DeletedCookies" xml:space="preserve">
+    <value>Deleted {0} Cookies</value>
+  </data>
+  <data name="DeletedCacheEntriesFromPath" xml:space="preserve">
+    <value>Deleted {0} Cache Entries from
+{1}</value>
+  </data>
+  <data name="RecorderHelpURL" xml:space="preserve">
+    <value>http://watintestrecord.sourceforge.net/TestRecorderInterfaces.html</value>
+  </data>
+  <data name="KnownBug" xml:space="preserve">
+    <value>Known Bug</value>
+  </data>
+  <data name="FileError" xml:space="preserve">
+    <value>File Error</value>
+  </data>
+  <data name="LanguageChange" xml:space="preserve">
+    <value>You must restart to change languges.  Do that now?</value>
+  </data>
+  <data name="LoadedCodeInDifferentLang" xml:space="preserve">
+    <value>Loaded code is in a different code language.</value>
+  </data>
+  <data name="TestName" xml:space="preserve">
+    <value>Test Name</value>
+  </data>
+  <data name="ShowPassword" xml:space="preserve">
+    <value>Show Password</value>
+  </data>
+  <data name="DeleteAllItems" xml:space="preserve">
+    <value>Delete all {0} items?</value>
+  </data>
+  <data name="NoTestsToRun" xml:space="preserve">
+    <value>No tests to run</value>
+  </data>
+  <data name="TestRecorderCodeType" xml:space="preserve">
+    <value>Test Recorder Code (*.trc)|*.trc</value>
+  </data>
+  <data name="FileDoesNotExist" xml:space="preserve">
+    <value>File {0} does not exist</value>
+  </data>
+  <data name="DeletedCookiesFromPath" xml:space="preserve">
+    <value>Deleted {0} Cookies from {1}</value>
+  </data>
+  <data name="DeleteCheckedItems" xml:space="preserve">
+    <value>Delete {0} checked items?</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>Find {0}</value>
+  </data>
+  <data name="CodeLanguage" xml:space="preserve">
+    <value>Code Language</value>
+  </data>
+  <data name="CompilerErrors" xml:space="preserve">
+    <value>Compiler Errors</value>
+  </data>
+  <data name="DeletedCacheEntries" xml:space="preserve">
+    <value>Deleted {0} Cache Entries</value>
+  </data>
+  <data name="SomeItemsCannotBeFound" xml:space="preserve">
+    <value>Some items cannot be found, preventing compilation.  Please find these resources:</value>
+  </data>
+  <data name="RemoveCacheEntriesFromPath" xml:space="preserve">
+    <value>Remove cache entries from {0} ?</value>
+  </data>
+  <data name="CompilingScript" xml:space="preserve">
+    <value>Compiling Script...</value>
+  </data>
+  <data name="MessageSentSuccessfully" xml:space="preserve">
+    <value>Message sent successfully</value>
+  </data>
+  <data name="RemoveAllHistory" xml:space="preserve">
+    <value>Proceed to remove all History entries?</value>
+  </data>
+  <data name="update" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="updater" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\updater.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

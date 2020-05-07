@@ -1,0 +1,9 @@
+D:\mywebsite\autorobo\src\MyTabControl\bin\Release\MyTabControl.dll
+D:\mywebsite\autorobo\src\MyTabControl\bin\Release\MyTabControl.pdb
+D:\mywebsite\autorobo\src\MyTabControl\obj\Release\MyTabControl.dll
+D:\mywebsite\autorobo\src\MyTabControl\obj\Release\MyTabControl.pdb
+E:\mywebsite\autorobo\src\MyTabControl\bin\Release\MyTabControl.dll
+E:\mywebsite\autorobo\src\MyTabControl\bin\Release\MyTabControl.pdb
+E:\mywebsite\autorobo\src\MyTabControl\obj\Release\MyTabControl.dll
+E:\mywebsite\autorobo\src\MyTabControl\obj\Release\MyTabControl.pdb
+D:\mywebsite\autorobo\src\MyTabControl\obj\Release\MyTabControl.csprojResolveAssemblyReference.cache

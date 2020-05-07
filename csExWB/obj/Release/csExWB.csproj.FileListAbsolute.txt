@@ -1,0 +1,12 @@
+D:\mywebsite\autorobo\src\csExWB\bin\Release\csExWB.dll
+D:\mywebsite\autorobo\src\csExWB\bin\Release\csExWB.pdb
+D:\mywebsite\autorobo\src\csExWB\bin\Release\log4net.dll
+D:\mywebsite\autorobo\src\csExWB\obj\Release\csExWB.csprojResolveAssemblyReference.cache
+D:\mywebsite\autorobo\src\csExWB\obj\Release\csExWB.dll
+D:\mywebsite\autorobo\src\csExWB\obj\Release\csExWB.pdb
+E:\mywebsite\autorobo\src\csExWB\bin\Release\csExWB.dll
+E:\mywebsite\autorobo\src\csExWB\bin\Release\csExWB.pdb
+E:\mywebsite\autorobo\src\csExWB\bin\Release\log4net.dll
+E:\mywebsite\autorobo\src\csExWB\obj\Release\csExWB.csprojResolveAssemblyReference.cache
+E:\mywebsite\autorobo\src\csExWB\obj\Release\csExWB.dll
+E:\mywebsite\autorobo\src\csExWB\obj\Release\csExWB.pdb

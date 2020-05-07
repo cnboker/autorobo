@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED4D7A89-B456-4D4A-9E24-570D9D8ECA46}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoRobo.Makers</RootNamespace>
+    <AssemblyName>AutoRobo.Makers</AssemblyName>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <StartupObject>AutoRobo.Program</StartupObject>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkProfile />
+    <CodeContractsAssemblyMode>0</CodeContractsAssemblyMode>
+    <PublishUrl>d:\mywebsite\autoRobo\release\autoRobo.Maker\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <SupportUrl>http://www.ebotop.com</SupportUrl>
+    <ProductName>bitrun</ProductName>
+    <PublisherName>深圳易播天下信息技术有限公司</PublisherName>
+    <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>802</ApplicationRevision>
+    <ApplicationVersion>1.9.9.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Test Recorder.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Test Recorder.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <CodeContractsEnableRuntimeChecking>False</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRuntimeSkipQuantifiers>False</CodeContractsRuntimeSkipQuantifiers>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsEnumObligations>False</CodeContractsEnumObligations>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsInferRequires>False</CodeContractsInferRequires>
+    <CodeContractsInferEnsures>False</CodeContractsInferEnsures>
+    <CodeContractsInferObjectInvariants>False</CodeContractsInferObjectInvariants>
+    <CodeContractsSuggestAssumptions>False</CodeContractsSuggestAssumptions>
+    <CodeContractsSuggestRequires>True</CodeContractsSuggestRequires>
+    <CodeContractsSuggestEnsures>False</CodeContractsSuggestEnsures>
+    <CodeContractsSuggestObjectInvariants>False</CodeContractsSuggestObjectInvariants>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>True</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>True</CodeContractsCacheAnalysisResults>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>Build</CodeContractsReferenceAssembly>
+    <CodeContractsAnalysisWarningLevel>0</CodeContractsAnalysisWarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1D4112724DDB4B9E527AC7985303B1802304C01C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.SHDocVw, Version=1.1.0.0, Culture=neutral, PublicKeyToken=db7cfd3acb5ad44e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\reflib\Interop.SHDocVw.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reflib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>Depends\Microsoft.mshtml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Win32.Hooks, Version=1.0.2908.36134, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reflib\Microsoft.Win32.Hooks.dll</HintPath>
+    </Reference>
+    <Reference Include="MouseKeyboardLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reflib\MouseKeyboardLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\reflib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceGrid">
+      <HintPath>..\reflib\SourceGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\reflib\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\Deploy.cs" />
+    <Compile Include="Application\DownloadUpdateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\DownloadUpdateDialog.Designer.cs">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application\SingleInstanceController.cs" />
+    <Compile Include="AutoUpdate.Framework\AppcastReader.cs" />
+    <Compile Include="AutoUpdate.Framework\FileDownloader.cs" />
+    <Compile Include="AutoUpdate.Framework\IUpdateFeedSource.cs" />
+    <Compile Include="AutoUpdate.Framework\Progress.cs" />
+    <Compile Include="AutoUpdate.Framework\Update.cs" />
+    <Compile Include="AutoUpdate.Framework\UpdateManager.cs" />
+    <Compile Include="AutoUpdate.Framework\UpdateStarter.cs" />
+    <Compile Include="EventArguments\ActionEditEventArgs.cs" />
+    <Compile Include="EventArguments\NewFileEventArgs.cs" />
+    <Compile Include="Installer.cs" />
+    <Compile Include="InstallInitializer.cs" />
+    <Compile Include="Presentation\FilePresenter.cs" />
+    <Compile Include="Views\ActionEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakerApp.cs" />
+    <Compile Include="Views\Controls\LineControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\DATAFIELD.cs" />
+    <Compile Include="Views\FileView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FileView.Designer.cs">
+      <DependentUpon>FileView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HtmlView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HtmlView.Designer.cs">
+      <DependentUpon>HtmlView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IFileView.cs" />
+    <Compile Include="Views\MenuBuilder.cs" />
+    <Compile Include="Models\Repositories\FileActionRepository.cs" />
+    <Compile Include="Models\Repositories\ActionRepository.cs" />
+    <Compile Include="Presentation\ActivityWorkshopPresenter.cs" />
+    <Compile Include="Presentation\BrowserPresenter.cs" />
+    <Compile Include="Presentation\MakerPresenter.cs" />
+    <Compile Include="Presentation\Presenter.cs" />
+    <Compile Include="Application\COMContext.cs" />
+    <Compile Include="Views\CollectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CollectDialog.Designer.cs">
+      <DependentUpon>CollectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application\RunType.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ActionGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\ActivityWorkshopView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ActivityWorkshopView.Designer.cs">
+      <DependentUpon>ActivityWorkshopView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BrowserView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BrowserView.Designer.cs">
+      <DependentUpon>BrowserView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IActivityWorkshopView.cs" />
+    <Compile Include="Views\IBrowserView.cs" />
+    <Compile Include="Views\IMakerView.cs" />
+    <Compile Include="Views\IView.cs" />
+    <Compile Include="Views\MineParams.cs" />
+    <Compile Include="Views\NewFileDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NewFileDialogForm.Designer.cs">
+      <DependentUpon>NewFileDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OnlineView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\OnlineView.Designer.cs">
+      <DependentUpon>OnlineView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MakerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MakerView.Designer.cs">
+      <DependentUpon>MakerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MultiBrowserArea.cs" />
+    <Compile Include="Views\OutputView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\OutputView.Designer.cs">
+      <DependentUpon>OutputView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PreviewForm.Designer.cs">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ScriptView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ScriptView.Designer.cs">
+      <DependentUpon>ScriptView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StartView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StartView.Designer.cs">
+      <DependentUpon>StartView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VariableActionGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\ViewBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ViewBase.Designer.cs">
+      <DependentUpon>ViewBase.cs</DependentUpon>
+    </Compile>
+    <Content Include="updater.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\updater.exe" />
+    <EmbeddedResource Include="Application\DownloadUpdateDialog.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dockConfig.xml" />
+    <EmbeddedResource Include="Icons\thread.png" />
+    <EmbeddedResource Include="Icons\mouse-move.png" />
+    <EmbeddedResource Include="Icons\module.png" />
+    <EmbeddedResource Include="Icons\property.png" />
+    <EmbeddedResource Include="Icons\read.png" />
+    <Content Include="App.ico" />
+    <Content Include="ie9.reg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\splashScreen.png" />
+    <EmbeddedResource Include="Resources\CustomObject.png" />
+    <EmbeddedResource Include="Icons\about.png" />
+    <EmbeddedResource Include="Icons\AlertHandler.bmp" />
+    <EmbeddedResource Include="Icons\array.png" />
+    <EmbeddedResource Include="Icons\Arrow-down-64.png" />
+    <EmbeddedResource Include="Icons\Arrow-In-32.png" />
+    <EmbeddedResource Include="Icons\Arrow-left-64.png" />
+    <EmbeddedResource Include="Icons\Arrow-leftdown-64.png" />
+    <EmbeddedResource Include="Icons\Arrow-right-64.png" />
+    <EmbeddedResource Include="Icons\Arrow-rightdown-64.png" />
+    <EmbeddedResource Include="Icons\Arrow-up-64.png" />
+    <EmbeddedResource Include="Icons\Back.bmp" />
+    <EmbeddedResource Include="Icons\block.png" />
+    <EmbeddedResource Include="Icons\breakpoint.bmp" />
+    <EmbeddedResource Include="Icons\broken.png" />
+    <EmbeddedResource Include="Icons\capture.gif" />
+    <EmbeddedResource Include="Icons\CheckBox.bmp" />
+    <EmbeddedResource Include="Icons\Click.bmp" />
+    <EmbeddedResource Include="Icons\CloseWindow.bmp" />
+    <EmbeddedResource Include="Icons\code.png" />
+    <EmbeddedResource Include="Icons\csv.png" />
+    <EmbeddedResource Include="Icons\Database.bmp" />
+    <EmbeddedResource Include="Icons\db-Add.bmp" />
+    <EmbeddedResource Include="Icons\db-Delete.bmp" />
+    <EmbeddedResource Include="Icons\doubleclick.bmp" />
+    <EmbeddedResource Include="Icons\error.png" />
+    <EmbeddedResource Include="Icons\explorer.png" />
+    <EmbeddedResource Include="Icons\Faulted.bmp" />
+    <EmbeddedResource Include="Icons\FireEvent.bmp" />
+    <EmbeddedResource Include="Icons\first.bmp" />
+    <EmbeddedResource Include="Icons\foreach.png" />
+    <EmbeddedResource Include="Icons\Forward.bmp" />
+    <EmbeddedResource Include="Icons\generic.png" />
+    <EmbeddedResource Include="Icons\goto.png" />
+    <EmbeddedResource Include="Icons\inactivebreak.bmp" />
+    <EmbeddedResource Include="Icons\JavaScript.png" />
+    <EmbeddedResource Include="Icons\KeyPress.bmp" />
+    <EmbeddedResource Include="Icons\last.bmp" />
+    <EmbeddedResource Include="Icons\Mouse.bmp" />
+    <EmbeddedResource Include="Icons\Navigate.bmp" />
+    <EmbeddedResource Include="Icons\next.bmp" />
+    <EmbeddedResource Include="Icons\ok.png" />
+    <EmbeddedResource Include="Icons\pagination.png" />
+    <EmbeddedResource Include="Icons\popwindow.png" />
+    <EmbeddedResource Include="Icons\previous.bmp" />
+    <EmbeddedResource Include="Icons\RadioButton.bmp" />
+    <EmbeddedResource Include="Icons\Refresh.bmp" />
+    <EmbeddedResource Include="Icons\richtext_editor.png" />
+    <EmbeddedResource Include="Icons\Run.bmp" />
+    <EmbeddedResource Include="Icons\save.png" />
+    <EmbeddedResource Include="Icons\script.ico" />
+    <EmbeddedResource Include="Icons\ScriptPart.png" />
+    <EmbeddedResource Include="Icons\SelectList.bmp" />
+    <EmbeddedResource Include="Icons\sessions.png" />
+    <EmbeddedResource Include="Icons\Sleep.bmp" />
+    <EmbeddedResource Include="Icons\splashScreen.png" />
+    <EmbeddedResource Include="Icons\step.bmp" />
+    <EmbeddedResource Include="Icons\StopRunning.bmp" />
+    <EmbeddedResource Include="Icons\table.png" />
+    <EmbeddedResource Include="Icons\TestElement.bmp" />
+    <EmbeddedResource Include="Icons\Tick.bmp" />
+    <EmbeddedResource Include="Icons\Time.ico" />
+    <EmbeddedResource Include="Icons\TypeText.bmp" />
+    <EmbeddedResource Include="Icons\Upload.bmp" />
+    <EmbeddedResource Include="Icons\variable.png" />
+    <EmbeddedResource Include="Icons\Wait.bmp" />
+    <EmbeddedResource Include="Icons\Window.bmp" />
+    <EmbeddedResource Include="Views\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ActivityWorkshopView.resx">
+      <DependentUpon>ActivityWorkshopView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BrowserView.resx">
+      <DependentUpon>BrowserView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FileView.resx">
+      <DependentUpon>FileView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HtmlView.resx">
+      <DependentUpon>HtmlView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NewFileDialogForm.resx">
+      <DependentUpon>NewFileDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\OnlineView.resx">
+      <DependentUpon>OnlineView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MakerView.resx">
+      <DependentUpon>MakerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\OutputView.resx">
+      <DependentUpon>OutputView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PreviewForm.resx">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ScriptView.resx">
+      <DependentUpon>ScriptView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StartView.resx">
+      <DependentUpon>StartView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ViewBase.resx">
+      <DependentUpon>ViewBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CollectDialog.resx">
+      <DependentUpon>CollectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Resources\update.png" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Log4Net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Properties\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <EmbeddedResource Include="Sample\google财经数据%28ajax数据提取%29.bit">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample\提取表格数据.bit" />
+    <EmbeddedResource Include="Sample\提取上市公司3大报表数据.bit">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="AForge">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="AForge.Imaging">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Antlr3.Runtime">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="AutoRobo.Makers.exe.manifest">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>ManifestEntryPoint</FileType>
+    </PublishFile>
+    <PublishFile Include="Jint">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Menu.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Office.Interop.Excel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MySql.Data">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="office">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ScintillaNET">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="System.Data.SQLite">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="System.Data.SqlServerCe">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\3rd\WatiN.Core\source\src\Core\WatiN.Core.csproj">
+      <Project>{217e2d34-f6df-431b-ac5a-b368f481a530}</Project>
+      <Name>WatiN.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRobo.Ant\AutoRobo.ClientLib.csproj">
+      <Project>{57C9613C-AE7D-4B0E-B641-6E1D0FE9E5FA}</Project>
+      <Name>AutoRobo.ClientLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRobo.Core\AutoRobo.Core.csproj">
+      <Project>{B5F04D1A-A40B-4136-8390-F3AEFF3C8F6C}</Project>
+      <Name>AutoRobo.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRobo.DataMapping\AutoRobo.DataMapping.csproj">
+      <Project>{9CFDEA39-275B-4245-BDE7-D96FD28D7EE4}</Project>
+      <Name>AutoRobo.DataMapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRobo.DB\AutoRobo.DB.csproj">
+      <Project>{23b83ead-51a4-452c-a5fd-cc21acffa889}</Project>
+      <Name>AutoRobo.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRobo.PlulgIn\AutoRobo.PlulgIn.csproj">
+      <Project>{6C27FE0B-C51F-43B2-8E52-B0345341CA8B}</Project>
+      <Name>AutoRobo.PlulgIn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRobo.Protocol\AutoRobo.Protocol.csproj">
+      <Project>{E6002FD6-8506-4FC5-954D-9DB4202573BE}</Project>
+      <Name>AutoRobo.Protocol</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRobo.WebApi\AutoRobo.WebApi.csproj">
+      <Project>{85F90361-2B8F-4F07-B41A-5549797B0BB6}</Project>
+      <Name>AutoRobo.WebApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRobo.WebHelper\AutoRobo.WebHelper.csproj">
+      <Project>{C3642563-DC8D-4200-A399-1F5B1B2A298E}</Project>
+      <Name>AutoRobo.WebHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\csExWB\csExWB.csproj">
+      <Project>{E8E8BB5D-3302-4763-94F2-A8A238F7D6EA}</Project>
+      <Name>csExWB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyTabControl\MyTabControl.csproj">
+      <Project>{3513ECC9-37E0-49A3-9551-9865702B6D3A}</Project>
+      <Name>MyTabControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+
+  <Target Name="BeforeBuild" Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <CreateProperty Value="true">
+      <Output TaskParameter="Value" PropertyName="Obfuscate" />
+    </CreateProperty>
+    <CreateProperty Value="">
+      <Output TaskParameter="Value" PropertyName="ObfuscatorOptionsOverride" />
+    </CreateProperty>
+    <CreateProperty Value="true">
+      <Output TaskParameter="Value" PropertyName="ShouldMergeAssemblies" />
+    </CreateProperty>
+    <CreateProperty Value="">
+      <Output TaskParameter="Value" PropertyName="MergeAssembliesArgOverride" />
+    </CreateProperty>
+  </Target>
+  <Import Project="$(MSBuildProjectDirectory)\Obfuscation.targets" /> 
+  <PropertyGroup>
+    <XenocodeLocation>"C:\Program Files\PreEmptive Solutions\Dotfuscator Professional Edition 4.9\Dotfuscator.exe"</XenocodeLocation>
+    <XenocodeProjectLocation>"$(ProjectDir)Dotfuscator.xml"</XenocodeProjectLocation>
+    <XenocodeOutputLocation>"$(ProjectDir)temp"</XenocodeOutputLocation>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+
+  <Target Name="BeforeBuild" Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <CreateProperty Value="true">
+      <Output TaskParameter="Value" PropertyName="Obfuscate" />
+    </CreateProperty>
+  </Target>
+  <Target Name="AfterCompile" Condition=" '$(Obfuscate)' != '' ">
+ 
+    <Exec Command="$(XenocodeLocation) $(XenocodeProjectLocation)" />
+    <Copy SourceFiles="$(ProjectDir)temp\$(TargetFileName)" DestinationFiles="$(IntermediateOutputPath)$(TargetFileName)" />
+  </Target>-->
+</Project>

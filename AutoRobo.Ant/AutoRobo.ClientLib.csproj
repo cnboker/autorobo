@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57C9613C-AE7D-4B0E-B641-6E1D0FE9E5FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoRobo.ClientLib</RootNamespace>
+    <AssemblyName>AutoRobo.ClientLib</AssemblyName>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkProfile />
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <PublishUrl>E:\mywebsite\autoRobo\release\client\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ProductName>autoRobo</ProductName>
+    <PublisherName>易播天下</PublisherName>
+    <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>526</ApplicationRevision>
+    <ApplicationVersion>2.0.9.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Test Recorder.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Test Recorder.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A71935BDD2F47A3A4BBEBA7AEF3D96FDEA6070B9</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr4.StringTemplate, Version=4.0.6.9004, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Antlr4.StringTemplate.4.0.6.9004\lib\net35\Antlr4.StringTemplate.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SHDocVw">
+      <HintPath>..\reflib\Interop.SHDocVw.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jint, Version=0.9.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reflib\Jint.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reflib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\AutoRobo.Maker\bin\Debug\Microsoft.mshtml.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Win32.Hooks">
+      <HintPath>..\reflib\Microsoft.Win32.Hooks.dll</HintPath>
+    </Reference>
+    <Reference Include="MyTabControl">
+      <HintPath>..\MyTabControl\obj\Debug\MyTabControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\reflib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WatiN.Core, Version=2.1.0.1196, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reflib\WatiN.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\reflib\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ants\BrowserSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ants\BrowserSettings.Designer.cs">
+      <DependentUpon>BrowserSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ants\BrowserStyle.cs" />
+    <Compile Include="Ants\BrowserToolbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ants\BrowserToolbar.Designer.cs">
+      <DependentUpon>BrowserToolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ants\FireBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ants\FireBrowser.Designer.cs">
+      <DependentUpon>FireBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ants\ProxyManager.cs" />
+    <Compile Include="Ants\PROXY_DATA.cs" />
+    <Compile Include="Ants\TestProxyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUILog.cs" />
+    <Compile Include="PageHooks\FunToolStripItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PageHooks\GetPR.cs" />
+    <Compile Include="PageHooks\Handler\AjaxRequestHandler.cs" />
+    <Compile Include="PageHooks\Handler\AutoLoginHandler.cs" />
+    <Compile Include="PageHooks\Handler\CheckEmailHandler.cs" />
+    <Compile Include="PageHooks\Handler\RegisterEmailHandler.cs" />
+    <Compile Include="PageHooks\Handler\RegisterEmailResultHandler.cs" />
+    <Compile Include="PageHooks\IRequestProcessor.cs" />
+    <Compile Include="PageHooks\Handler\LogRequestHandler.cs" />
+    <Compile Include="PageHooks\Handler\Recognize\CssRecognizer.cs" />
+    <Compile Include="PageHooks\Handler\Recognize\HashCodeRecognizer.cs" />
+    <Compile Include="PageHooks\Handler\Recognize\IRecognizer.cs" />
+    <Compile Include="PageHooks\Handler\Recognize\KeywordRecognizer.cs" />
+    <Compile Include="PageHooks\Handler\Recognize\Recognizer.cs" />
+    <Compile Include="PageHooks\Handler\Recognize\XPathRecognizer.cs" />
+    <Compile Include="PageHooks\Handler\RegisterResultHandler.cs" />
+    <Compile Include="PageHooks\Handler\AccountHandler.cs" />
+    <Compile Include="PageHooks\IAsyncResult.cs" />
+    <Compile Include="PageHooks\Models\CustomScriptWriteRepository.cs" />
+    <Compile Include="PageHooks\Models\LocalScriptRepository.cs" />
+    <Compile Include="PageHooks\Models\ScriptRepository.cs" />
+    <Compile Include="PageHooks\Models\PageRecognizeEnum.cs" />
+    <Compile Include="PageHooks\Models\ScriptTypeEnum.cs" />
+    <Compile Include="PageHooks\Models\ThreadRepository.cs" />
+    <Compile Include="PageHooks\TaskToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PageHooks\Views\EmptyResult.cs" />
+    <Compile Include="PageHooks\IStripContainer.cs" />
+    <Compile Include="PageHooks\Views\RegisterResultView.cs" />
+    <Compile Include="PageHooks\Views\SchemaObjectSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageHooks\Views\SchemaObjectSelect.Designer.cs">
+      <DependentUpon>SchemaObjectSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ants\AutoBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSource\SqlHealthyTracer.cs" />
+    <Compile Include="PageHooks\Handler\AuthenticateHandler.cs" />
+    <Compile Include="PageHooks\Handler\MatchResultHandler.cs" />
+    <Compile Include="PageHooks\Views\DefaultView.cs" />
+    <Compile Include="PageHooks\Views\ViewResult.cs" />
+    <Compile Include="PageHooks\Views\RegisterEmailResultView.cs" />
+    <Compile Include="PageServices\CustomIdentity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PageHooks\IExpandoExtension.cs" />
+    <Compile Include="PageHooks\FakeHttpContext.cs" />
+    <Compile Include="PageHooks\IRequest.cs" />
+    <Compile Include="PageHooks\IRequestHandler.cs" />
+    <Compile Include="PageHooks\IResult.cs" />
+    <Compile Include="PageHooks\Handler\LoginHandler.cs" />
+    <Compile Include="PageHooks\Handler\MatchHandler.cs" />
+    <Compile Include="PageHooks\Handler\PageHandler.cs" />
+    <Compile Include="PageHooks\Handler\RegisterHandler.cs" />
+    <Compile Include="PageHooks\UrlRequest.cs" />
+    <Compile Include="PluginManger.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="HostBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScriptLoader.cs" />
+    <Compile Include="TrayContext.cs" />
+    <Compile Include="WebBrowserHelper.cs" />
+    <EmbeddedResource Include="Ants\AutoBrowser.resx">
+      <DependentUpon>AutoBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ants\BrowserSettings.resx">
+      <DependentUpon>BrowserSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ants\BrowserToolbar.resx">
+      <DependentUpon>BrowserToolbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ants\FireBrowser.resx">
+      <DependentUpon>FireBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ants\TestProxyForm.resx">
+      <DependentUpon>TestProxyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageHooks\Views\SchemaObjectSelect.resx">
+      <DependentUpon>SchemaObjectSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="autoCopyer.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Office.Interop.Excel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="office">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="RazorEngine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="System.Web.Razor">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="zh-Hans\System.Web.Razor.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutoRobo.Core\AutoRobo.Core.csproj">
+      <Project>{B5F04D1A-A40B-4136-8390-F3AEFF3C8F6C}</Project>
+      <Name>AutoRobo.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRobo.DataMapping\AutoRobo.DataMapping.csproj">
+      <Project>{9CFDEA39-275B-4245-BDE7-D96FD28D7EE4}</Project>
+      <Name>AutoRobo.DataMapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRobo.Protocol\AutoRobo.Protocol.csproj">
+      <Project>{E6002FD6-8506-4FC5-954D-9DB4202573BE}</Project>
+      <Name>AutoRobo.Protocol</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRobo.WebApi\AutoRobo.WebApi.csproj">
+      <Project>{85F90361-2B8F-4F07-B41A-5549797B0BB6}</Project>
+      <Name>AutoRobo.WebApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoRobo.WebHelper\AutoRobo.WebHelper.csproj">
+      <Project>{C3642563-DC8D-4200-A399-1F5B1B2A298E}</Project>
+      <Name>AutoRobo.WebHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\csExWB\csExWB.csproj">
+      <Project>{E8E8BB5D-3302-4763-94F2-A8A238F7D6EA}</Project>
+      <Name>csExWB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\register_email.png" />
+    <None Include="Resources\mail.png" />
+    <None Include="Resources\cutInfo.png" />
+    <None Include="Resources\docRefresh.png" />
+    <None Include="Resources\selection.png" />
+    <None Include="Resources\nav.png" />
+    <None Include="Resources\account.png" />
+    <None Include="Resources\at.png" />
+    <Content Include="Resources\bootscreen.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>if /I "$(ConfigurationName)" == "Release" Eazfuscator.NET.exe "$(TargetPath)" --msbuild-project-path "$(ProjectPath)" --msbuild-project-configuration "$(ConfigurationName)" --msbuild-project-platform "$(PlatformName)" --msbuild-solution-path "$(SolutionPath)" -n --newline-flush -v 3.3</PostBuildEvent>
+  </PropertyGroup>
+</Project>

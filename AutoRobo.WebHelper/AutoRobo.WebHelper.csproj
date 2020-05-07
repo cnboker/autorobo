@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C3642563-DC8D-4200-A399-1F5B1B2A298E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoRobo.WebHelper</RootNamespace>
+    <AssemblyName>AutoRobo.WebHelper</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>sn.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CsvHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CsvHelper.2.2.2\lib\net40-client\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\reflib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adsl.cs" />
+    <Compile Include="DataTableExtension.cs" />
+    <Compile Include="Distance.cs" />
+    <Compile Include="HttpPing.cs" />
+    <Compile Include="HttpRequestWapper.cs" />
+    <Compile Include="icon.cs" />
+    <Compile Include="IISBlockedIpList.cs" />
+    <Compile Include="IPipe.cs" />
+    <Compile Include="Isolated.cs" />
+    <Compile Include="Jsbeautifier\Beautifier.cs" />
+    <Compile Include="Jsbeautifier\BeautifierFlags.cs" />
+    <Compile Include="Jsbeautifier\BeautifierOptions.cs" />
+    <Compile Include="Jsbeautifier\BraceStyle.cs" />
+    <Compile Include="NotepadHelper.cs" />
+    <Compile Include="ObjectDumper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomStringHelper.cs" />
+    <Compile Include="RequestManager.cs" />
+    <Compile Include="Rijndael.cs" />
+    <Compile Include="RijndaelHelper.cs" />
+    <Compile Include="SharedBuffer.cs" />
+    <Compile Include="ShortGuid.cs" />
+    <Compile Include="ShortUrl.cs" />
+    <Compile Include="StringHelper.cs" />
+    <Compile Include="StringParser.cs" />
+    <Compile Include="StringSearchAlgorithm\IStringSearchAlgorithm.cs" />
+    <Compile Include="StringSearchAlgorithm\StringSearch.cs" />
+    <Compile Include="StringSearchAlgorithm\StringSearchResult.cs" />
+    <Compile Include="Tokenizer\StringTokenizer.cs" />
+    <Compile Include="Tokenizer\TokenKind.cs" />
+    <Compile Include="ToolStripSpringTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransparentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Winform\DataGridViewWithPaging.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Winform\DataGridViewWithPaging.designer.cs">
+      <DependentUpon>DataGridViewWithPaging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Winform\FolderBrowserDialogEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Winform\ToolStripCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="sn.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Winform\DataGridViewWithPaging.resx">
+      <DependentUpon>DataGridViewWithPaging.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>if /I "$(ConfigurationName)" == "Release" Eazfuscator.NET.exe "$(TargetPath)" --msbuild-project-path "$(ProjectPath)" --msbuild-project-configuration "$(ConfigurationName)" --msbuild-project-platform "$(PlatformName)" --msbuild-solution-path "$(SolutionPath)" -n --newline-flush -v 3.3</PostBuildEvent>
+  </PropertyGroup>
+</Project>

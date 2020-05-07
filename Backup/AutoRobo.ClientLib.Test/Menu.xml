@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MainMenu>
+    <MenuItem Name="Click" Text="鼠标点击" Action="ActionClick" Shortcut=""/>
+    <MenuItem Name="TypeText" Text="输入文本" Action="ActionTypeText" Shortcut=""/>
+    <MenuItem Name="SelectList" Text="下拉列表选择" Action="ActionSelectList" Shortcut=""/>
+    <MenuItem Name="ForeachByTag" Text="标签遍历" Action="ActionForeach" Shortcut=""/>
+    <MenuItem Name="ActionCapture" Text="提取文本" Action="ActionCapture" Shortcut=""/>
+    <MenuItem Name="Spliter1" Text="-"></MenuItem>
+    <MenuItem Name="Click" Text="鼠标点击" Action="ActionClick" Shortcut="">
+        <Items>
+            <MenuItem></MenuItem>
+        </Items>
+    </MenuItem>
+    <MenuItem Name="Click" Text="鼠标点击" Action="ActionClick" Shortcut="">
+        <Items>
+            <MenuItem></MenuItem>
+        </Items>
+    </MenuItem>
+</MainMenu>

@@ -1,0 +1,7 @@
+INFO  2014-04-24 15:05:55,246 1623104ms Watcher                Watch              - selectbyselector elapse time:580.0332
+INFO  2014-04-24 15:06:24,349 1652207ms Watcher                Watch              - selectbyselector elapse time:3346.1914
+FATAL 2014-04-24 15:10:32,549 1900407ms ActionsModelView       StepIn             - System.Data.SqlClient.SqlException (0x80131904): 无法打开登录所请求的数据库 "p2p"。登录失败。
+用户 'sa' 登录失败。
+   在 AutoRobo.Core.Actions.ActionDatabaseWriter.Perform()
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex)
+ClientConnectionId:844a5e71-ffd6-4992-8fe6-89b355db152f

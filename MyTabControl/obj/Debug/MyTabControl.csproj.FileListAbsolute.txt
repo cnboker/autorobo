@@ -1,0 +1,16 @@
+D:\mywebsite\autorobo\src\MyTabControl\bin\Debug\MyTabControl.dll
+D:\mywebsite\autorobo\src\MyTabControl\bin\Debug\MyTabControl.pdb
+D:\mywebsite\autorobo\src\MyTabControl\obj\Debug\MyTabControl.dll
+D:\mywebsite\autorobo\src\MyTabControl\obj\Debug\MyTabControl.pdb
+E:\mywebsite\autorobo\src\MyTabControl\bin\Debug\MyTabControl.dll
+E:\mywebsite\autorobo\src\MyTabControl\bin\Debug\MyTabControl.pdb
+E:\mywebsite\autorobo\src\MyTabControl\obj\Debug\MyTabControl.csprojResolveAssemblyReference.cache
+E:\mywebsite\autorobo\src\MyTabControl\obj\Debug\MyTabControl.dll
+E:\mywebsite\autorobo\src\MyTabControl\obj\Debug\MyTabControl.pdb
+D:\mywebsite\autorobo\src\MyTabControl\obj\Debug\MyTabControl.csprojResolveAssemblyReference.cache
+H:\backup\D\mywebsite\autorobo\src\MyTabControl\bin\Debug\MyTabControl.dll
+H:\backup\D\mywebsite\autorobo\src\MyTabControl\bin\Debug\MyTabControl.pdb
+H:\backup\D\mywebsite\autorobo\src\MyTabControl\obj\Debug\MyTabControl.csprojAssemblyReference.cache
+H:\backup\D\mywebsite\autorobo\src\MyTabControl\obj\Debug\MyTabControl.csproj.CoreCompileInputs.cache
+H:\backup\D\mywebsite\autorobo\src\MyTabControl\obj\Debug\MyTabControl.dll
+H:\backup\D\mywebsite\autorobo\src\MyTabControl\obj\Debug\MyTabControl.pdb

@@ -1,0 +1,19 @@
+INFO  2017-02-12 15:16:08,260 99671ms ProjectHelper          Initialize         - AppSettings.Instance.LibraryPath:C:\Users\scott\Documents\bitrun
+INFO  2017-02-12 15:36:48,485 397837ms ProjectHelper          Initialize         - AppSettings.Instance.LibraryPath:C:\Users\scott\Documents\bitrun
+FATAL 2017-02-12 17:10:16,182 6005534ms ActionsModelView       StepIn             - System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Reflection.IReflect.GetProperty(String name, BindingFlags bindingAttr)
+   在 WatiN.Core.Native.InternetExplorer.Expando.GetValue(String propertyName) 位置 D:\mywebsite\autorobo\3rd\WatiN.Core\source\src\Core\Native\InternetExplorer\Expando.cs:行号 43
+   在 WatiN.Core.Native.InternetExplorer.JScriptElementArrayEnumerator.<GetEnumerator>d__3.MoveNext() 位置 D:\mywebsite\autorobo\3rd\WatiN.Core\source\src\Core\Native\InternetExplorer\JScriptElementArrayEnumerator.cs:行号 46
+   在 WatiN.Core.NativeElementFinder.<WrapMatchingElements>d__12.MoveNext() 位置 D:\mywebsite\autorobo\3rd\WatiN.Core\source\src\Core\NativeElementFinder.cs:行号 110
+   在 WatiN.Core.BaseElementCollection`2.<GetComponents>d__12.MoveNext() 位置 D:\mywebsite\autorobo\3rd\WatiN.Core\source\src\Core\BaseElementCollection.cs:行号 113
+   在 WatiN.Core.UtilityClasses.LazyList`1.PopulateCacheUpToIndex(Int32 index) 位置 D:\mywebsite\autorobo\3rd\WatiN.Core\source\src\Core\UtilityClasses\LazyList.cs:行号 116
+   在 WatiN.Core.UtilityClasses.LazyList`1.<GetEnumerator>d__9.MoveNext() 位置 D:\mywebsite\autorobo\3rd\WatiN.Core\source\src\Core\UtilityClasses\LazyList.cs:行号 92
+   在 AutoRobo.Core.Actions.ActionExtract.GetMutiContent() 位置 D:\mywebsite\autorobo\src\AutoRobo.Core\Actions\Data\ActionExtract.cs:行号 77
+   在 AutoRobo.Core.Actions.ActionExtract.Perform() 位置 D:\mywebsite\autorobo\src\AutoRobo.Core\Actions\Data\ActionExtract.cs:行号 45
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 D:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145
+FATAL 2017-02-12 17:10:16,218 6005570ms ActionsModelView       StepIn             - System.Threading.ThreadAbortException: 正在中止线程。
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 D:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 147
+   在 AutoRobo.Core.ActionsModelView.Run() 位置 D:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 61
+   在 AutoRobo.Core.Actions.ActionBlock.Perform() 位置 D:\mywebsite\autorobo\src\AutoRobo.Core\Actions\ActionBlock.cs:行号 38
+   在 AutoRobo.Core.Actions.ActionForeach.Perform() 位置 D:\mywebsite\autorobo\src\AutoRobo.Core\Actions\Loop\ActionForeach.cs:行号 82
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 D:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145

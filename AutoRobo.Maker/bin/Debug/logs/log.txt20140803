@@ -1,0 +1,51 @@
+INFO  2014-08-03 17:01:09,652 20395ms ProjectHelper          Initialize         - AppSettings.Instance.LibraryPath:C:\Users\scott\Documents\bitrun
+INFO  2014-08-03 17:05:32,984 19064ms ProjectHelper          Initialize         - AppSettings.Instance.LibraryPath:C:\Users\scott\Documents\bitrun
+FATAL 2014-08-03 17:09:18,507 244586ms ActionsModelView       StepIn             - System.Security.SecurityException: 异常来自 HRESULT:0x800A0046 (CTL_E_PERMISSIONDENIED)
+   在 System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   在 System.Runtime.InteropServices.CustomMarshalers.ExpandoViewOfDispatchEx.DispExInvoke(String pstrMemberName, Int32 MemberDispID, Int32 Flags, Binder pBinder, Object[] aArgs, ParameterModifier[] aModifiers, CultureInfo pCultureInfo, String[] astrNamedParameters)
+   在 System.Runtime.InteropServices.CustomMarshalers.DispatchExMethodInfo.Invoke(Object pObj, BindingFlags invokeAttr, Binder pBinder, Object[] aParameters, CultureInfo pCulture)
+   在 System.Reflection.PropertyInfo.GetValue(Object obj, Object[] index)
+   在 WatiN.Core.Native.InternetExplorer.Expando.GetValue(String propertyName)
+   在 WatiN.Core.Native.InternetExplorer.JScriptElementArrayEnumerator.<GetEnumerator>d__0.MoveNext()
+   在 WatiN.Core.NativeElementFinder.<WrapMatchingElements>d__b.MoveNext()
+   在 WatiN.Core.BaseElementCollection`2.<GetComponents>d__0.MoveNext()
+   在 WatiN.Core.UtilityClasses.LazyList`1.PopulateCacheUpToIndex(Int32 index)
+   在 WatiN.Core.UtilityClasses.LazyList`1.<GetEnumerator>d__0.MoveNext()
+   在 AutoRobo.Core.Actions.ActionExtract.GetMutiContent() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\Data\ActionExtract.cs:行号 77
+   在 AutoRobo.Core.Actions.ActionExtract.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\Data\ActionExtract.cs:行号 45
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145
+失败的程序集的区域是:
+MyComputer
+INFO  2014-08-03 17:31:15,566 41984ms ProjectHelper          Initialize         - AppSettings.Instance.LibraryPath:C:\Users\scott\Documents\bitrun
+FATAL 2014-08-03 17:32:42,063 128481ms ActionsModelView       StepIn             - System.Threading.ThreadAbortException: 正在中止线程。
+   在 AutoRobo.Core.Actions.ActionOpenDetailPage.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\ActionOpenDetailPage.cs:行号 55
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145
+FATAL 2014-08-03 17:35:52,533 318951ms ActionsModelView       StepIn             - WatiN.Core.Exceptions.RunScriptException: RunScript failed ---> System.Runtime.InteropServices.COMException: 异常来自 HRESULT:0x80020101
+   在 mshtml.IHTMLWindow2.execScript(String code, String language)
+   在 WatiN.Core.Native.InternetExplorer.IEUtils.RunScript(String scriptCode, String language, IHTMLWindow2 window)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 WatiN.Core.Native.InternetExplorer.IEUtils.RunScript(String scriptCode, String language, IHTMLWindow2 window)
+   在 WatiN.Core.Native.InternetExplorer.IEElementCollection.GetElementsWithQuerySelector(String selector, DomContainer domContainer)
+   在 WatiN.Core.NativeElementFinder.FindElementsUsingQuerySelector(String selector)
+   在 WatiN.Core.BaseElementCollection`2.<GetComponents>d__0.MoveNext()
+   在 WatiN.Core.UtilityClasses.LazyList`1.PopulateCacheUpToIndex(Int32 index)
+   在 WatiN.Core.UtilityClasses.LazyList`1.<GetEnumerator>d__0.MoveNext()
+   在 AutoRobo.Core.Actions.ActionExtract.GetMutiContent() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\Data\ActionExtract.cs:行号 77
+   在 AutoRobo.Core.Actions.ActionExtract.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\Data\ActionExtract.cs:行号 45
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145
+FATAL 2014-08-03 17:36:00,015 326432ms ActionsModelView       StepIn             - System.Threading.ThreadAbortException: 正在中止线程。
+   在 AutoRobo.Core.Actions.ActionOpenDetailPage.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\ActionOpenDetailPage.cs:行号 55
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145
+FATAL 2014-08-03 17:37:00,339 386757ms ActionsModelView       StepIn             - WatiN.Core.Exceptions.RunScriptException: RunScript failed ---> System.Runtime.InteropServices.COMException: 异常来自 HRESULT:0x80020101
+   在 mshtml.IHTMLWindow2.execScript(String code, String language)
+   在 WatiN.Core.Native.InternetExplorer.IEUtils.RunScript(String scriptCode, String language, IHTMLWindow2 window)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 WatiN.Core.Native.InternetExplorer.IEUtils.RunScript(String scriptCode, String language, IHTMLWindow2 window)
+   在 WatiN.Core.Native.InternetExplorer.IEElementCollection.GetElementsWithQuerySelector(String selector, DomContainer domContainer)
+   在 WatiN.Core.NativeElementFinder.FindElementsUsingQuerySelector(String selector)
+   在 WatiN.Core.BaseElementCollection`2.<GetComponents>d__0.MoveNext()
+   在 WatiN.Core.UtilityClasses.LazyList`1.PopulateCacheUpToIndex(Int32 index)
+   在 WatiN.Core.UtilityClasses.LazyList`1.<GetEnumerator>d__0.MoveNext()
+   在 AutoRobo.Core.Actions.ActionExtract.GetMutiContent() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\Data\ActionExtract.cs:行号 77
+   在 AutoRobo.Core.Actions.ActionExtract.Perform() 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\Actions\Data\ActionExtract.cs:行号 45
+   在 AutoRobo.Core.ActionsModelView.StepIn(ActionBase action, Int32 RowIndex) 位置 d:\mywebsite\autorobo\src\AutoRobo.Core\ActionsModelView.cs:行号 145

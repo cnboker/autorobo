@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AutoScript DataMethod="Collect">
+  <MainAction>
+    <Action ActionType="ActionAddItemToStringVariable" ObjectName="selectText" PropertyName="Text" StringPattern.Expression="" StringPattern.Pattern="0" FliterEmptyString="0" IsContextBinding="0">
+      <ElementType>SelectList</ElementType>
+      <FinderSet>
+        <Finder FindMethod="CssSelector" FindName="" FindValue="SELECT#myselect" Regex="0" />
+      </FinderSet>
+    </Action>
+	 <Action ActionType="ActionAddItemToStringVariable" ObjectName="selectValue" PropertyName="Value" StringPattern.Expression="" StringPattern.Pattern="0" FliterEmptyString="0" IsContextBinding="0">
+      <ElementType>SelectList</ElementType>
+      <FinderSet>
+        <Finder FindMethod="CssSelector" FindName="" FindValue="SELECT#myselect" Regex="0" />
+      </FinderSet>
+    </Action>
+  </MainAction>
+  <FunctionAction />
+  <VariableAction>
+    <Action ActionType="ActionStringVariable" Value="" Name="selectValue" Direction="0" />
+    <Action ActionType="ActionStringVariable" Value="" Name="selectText" Direction="0" />
+  </VariableAction>
+</AutoScript>
